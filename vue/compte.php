@@ -66,8 +66,8 @@
 
             include('modele/get_userdepotlist.php');
             $depotlist = userdepotlist($_SESSION['depositaddress']);
-
-            if (isset($depotlist['hash']))
+            $total = 0;
+            if (isset($depotlist['0']))
             {
                 // On boucle sur le array pour afficher les détails des transactions
                 foreach($depotlist as $cle => $value)
@@ -80,7 +80,10 @@
                     echo 'Date : '.$value['date_depot'].'<br />';
                     echo 'Valeur : '.$btcamount.' BTC<br />';
                     echo 'Confirmations : '.$value['confirmations'].'/6<br /><br />';
+                    $total = $total + $btcamount;
                 }
+
+                echo 'Montant total déposé : '.$total.' BTC';
             }
 
             else
