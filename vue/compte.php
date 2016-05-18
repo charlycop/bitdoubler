@@ -1,9 +1,9 @@
 <?php
-require 'vendor/autoload.php';
-use Blocktrail\SDK\BlocktrailSDK;
-$client = new BlocktrailSDK("c614645a7f5d94b961ec3ed3dbd036c64ba42f34", "ef41c854d7fb246f5a4445d07cb9fe2a5b25a15f", "BTC", true /* testnet */);
-
+    require 'vendor/autoload.php';
+    use Blocktrail\SDK\BlocktrailSDK;
+    $client = new BlocktrailSDK("c614645a7f5d94b961ec3ed3dbd036c64ba42f34", "ef41c854d7fb246f5a4445d07cb9fe2a5b25a15f", "BTC", true /* testnet */);
 ?>
+
 <!DOCTYPE HTML>
 <head>
     <title>Bitcoin Doubler</title>
@@ -31,60 +31,63 @@ $client = new BlocktrailSDK("c614645a7f5d94b961ec3ed3dbd036c64ba42f34", "ef41c85
 </head>
     
 <body>
-<h1>Doublez vos bitcoins</h1>
+    <h1>Doublez vos bitcoins</h1>
 
 
-<div id="compte">
-   
-    <?php 
-        // On récupère la balance en satoshis
-        $balance=$client->address($_SESSION['depositaddress']);
+    <div id="compte">
+       
+        <?php 
+            // On récupère la balance en satoshis
+            $balance=$client->address($_SESSION['depositaddress']);
 
-        // On converti la balance de satoshis en BTC
-        $btcbalance=BlocktrailSDK::toBTC($balance['balance']);
+            // On converti la balance de satoshis en BTC
+            $btcbalance=BlocktrailSDK::toBTC($balance['balance']);
 
-        // On affiche les détails important du compte :
-        echo 'User id = '.$_SESSION['user_id'].'';
-        echo '<br>User Adress = '.$_SESSION['useraddress'].'';
-        echo '<br>User deposit = '.$_SESSION['depositaddress'].''; 
-        echo '<br>Total déposé : '.$btcbalance.' BTC';
-    ?>
+            // On affiche les détails important du compte :
+            echo 'User id = '.$_SESSION['user_id'].'';
+            echo '<br>User Adress = '.$_SESSION['useraddress'].'';
+            echo '<br>User deposit = '.$_SESSION['depositaddress'].''; 
+            echo '<br>Total déposé : '.$btcbalance.' BTC';
+        ?>
 
-    <br>
-    <!--ON AFFICHE LE QRCODE-->
-    <img src="https://chart.googleapis.com/chart?chs=165x165&cht=qr&chl=bitcoin:<?php echo $_SESSION['depositaddress']; ?>" />
-    
-    <!--Lien d'affiliation-->
-    <h2>Affiliate link = <a href="http://localhost/cours_php/api/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?>">http://localhost/cours_php/api/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?></a></h2>
-   
-    <br>
-    <br>
+        <br>
+        <!--ON AFFICHE LE QRCODE-->
+        <img src="https://chart.googleapis.com/chart?chs=165x165&cht=qr&chl=bitcoin:<?php echo $_SESSION['depositaddress']; ?>" />
+        
+        <!--Lien d'affiliation-->
+        <h2>Affiliate link = <a href="http://localhost/cours_php/api/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?>">http://localhost/cours_php/api/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?></a></h2>
+       
+        <br>
+        <br>
 
-    <?php
-        // On récupère un array avec tous les transactions de la depositaddress
-        $transactions=$client->addressTransactions($_SESSION['depositaddress']);
+        <?php
+            // On récupère un array avec tous les transactions de la depositaddress
+            //$transactions=$client->addressTransactions($_SESSION['depositaddress']);
 
-        if ($transactions['total'] != 0)
-        {
-            // On boucle sur le array pour afficher les détails des transactions
-            foreach($transactions['data'] as $cle => $value)
+            include('modele/get_userdepotlist.php');
+            $depotlist = userdepotlist($_SESSION['depositaddress']);
+
+            if (isset($depotlist['hash']))
             {
-                //On converti le montant de la transactions de satoshis en BTC
-                $btcamount = BlocktrailSDK::toBTC($value['estimated_value']);
+                // On boucle sur le array pour afficher les détails des transactions
+                foreach($depotlist as $cle => $value)
+                {
+                    //On converti le montant de la transactions de satoshis en BTC
+                    $btcamount = BlocktrailSDK::toBTC($value['value']);
 
-                // On affiche les details :
-                echo 'Transaction : '.$value['hash'].'<br />';
-                echo 'Amount : '.$btcamount.' BTC<br />';
-                echo 'Confirmations : '.$value['confirmations'].'<br />';
-                echo 'Date: '.$value['time'].'<br /><br />';
+                    // On affiche les details :
+                    echo 'Transaction : '.$value['hash'].'<br />';
+                    echo 'Date : '.$value['date_depot'].'<br />';
+                    echo 'Valeur : '.$btcamount.' BTC<br />';
+                    echo 'Confirmations : '.$value['confirmations'].'/6<br /><br />';
+                }
             }
-        }
 
-        else
-        {
-            echo 'Aucun dépôt pour le moment';
-        }
-    ?>
-</div>
+            else
+            {
+                echo 'Aucun dépôt pour le moment';
+            }
+        ?>
+    </div>
 </body>
 </html>

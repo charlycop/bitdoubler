@@ -29,7 +29,7 @@
 
 
 <div id="bilan">
-    <form enctype="multipart/form-data" action="creation_compte.php" method="post">
+    <form enctype="multipart/form-data" action="modele/creation_compte.php" method="post">
         <label id="useraddress" name="useraddress">
         Nous utiliserons votre adresse bitcoin comme identifiant unique de votre compte. <br>
         Entrez votre adresse bitcoin ici afin de créer votre compte : 
