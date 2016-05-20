@@ -33,8 +33,6 @@ $deposit = post_deposit($hash, $date_depot, $value, $depositaddress, $userid, $n
 if ($nb_confirmations == 6)
 	{
 		// On envoie la rétribution au parrain après 6 confirmations
-
-		// On place la transaction dans la table payouts
 	}
 
 //On envoie un email à l'admin
@@ -46,3 +44,6 @@ $headers = 'From: BTC Doubler admin <1020916229@qq.com>'."\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
 $headers .= "\r\n";
 mail($to, $subject, $msg, $headers);
+
+echo 'SALUT';
+?>

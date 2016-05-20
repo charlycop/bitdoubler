@@ -58,15 +58,18 @@
         <h2>Affiliate link = <a href="http://localhost/cours_php/api/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?>">http://localhost/cours_php/api/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?></a></h2>
        
         <br>
+
         <br>
 
         <?php
+
             // On récupère un array avec tous les transactions de la depositaddress
             //$transactions=$client->addressTransactions($_SESSION['depositaddress']);
 
             include('modele/get_userdepotlist.php');
             $depotlist = userdepotlist($_SESSION['depositaddress']);
             $total = 0;
+
             if (isset($depotlist['0']))
             {
                 // On boucle sur le array pour afficher les détails des transactions
@@ -89,6 +92,7 @@
             else
             {
                 echo 'Aucun dépôt pour le moment';
+                echo '<br>'.$_SESSION['depositaddress'].'';
             }
         ?>
     </div>

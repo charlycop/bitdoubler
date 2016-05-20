@@ -67,7 +67,7 @@
 
     //On envoie un bilan par email à l'admin
     $to = 'charlycop@free.fr';
-    $subject = 'Bilan payout du '.datetimepayout.'';
+    $subject = 'Bilan payout du '.$datetimepayout.'';
     $msg = 'Deposit address : '.$hash_payments.'<br/>
             '.$bilanbdd.'';
     //$msg = '<p>Un nouveau commentaire vient d\'être posté sur votre billet intitulé '.$value.'.</p>';
