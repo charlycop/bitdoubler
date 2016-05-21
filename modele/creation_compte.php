@@ -5,10 +5,13 @@ include_once('connexion_sql.php');
 //On charge le SDK de blocktrail
 require '../vendor/autoload.php';
 use Blocktrail\SDK\BlocktrailSDK;
-
-$useraddress = htmlspecialchars($_POST['useraddress']);
+include('parraincode_exist.php');
 include('addresschecker.php');
 include('user_exist.php');
+
+// On sécurise l'adresse bitcoin et le parrain
+$useraddress = htmlspecialchars($_POST['useraddress']);
+$parraincode = htmlspecialchars($_POST['parraincode']);
 
 // Si l'adresse est correcte, on cré le compte
 if (adresschecker($useraddress))
@@ -22,10 +25,16 @@ if (adresschecker($useraddress))
 
 			//création d'un code unique d'affilié
 			$affcode = (substr(sha1($useraddress), -8));
+
+			// On s'occupe du parrain
+			if (($parraincode == 'parrainunknow') OR (!parraincode_exist($parraincode)))
+			{
+				$parraincode = NULL;	
+			}
 			
 			//On ajoute le tout dans la BDD
 			include_once('post_user.php');
-			$user_id=post_user($useraddress,$depositaddress,$affcode,$datetimephp);
+			$user_id=post_user($useraddress,$depositaddress,$affcode,$parraincode);
 
 			//On cré l'event dans le webhook
 			$client->subscribeAddressTransactions('testwebhook', $depositaddress, 6);
@@ -40,7 +49,6 @@ if (adresschecker($useraddress))
 		    $_SESSION['depositaddress'] = $depositaddress;
 		    $_SESSION['affcode'] = $affcode;
 		}
-
 	header('Location: ../index.php?account='.$useraddress.'');
 	}
 

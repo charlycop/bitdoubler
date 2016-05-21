@@ -31,5 +31,15 @@ elseif (isset($_SESSION['user_id']))
 
 else
 {   
+    if (isset($_GET['aff']))
+    {
+        $parraincode = htmlspecialchars($_GET['aff']);
+    }
+
+    else
+    {
+        $parraincode = 'parrainunknow';
+    }
+
     include('vue/welcome.php');
 }

@@ -35,6 +35,7 @@
         Entrez votre adresse bitcoin ici afin de créer votre compte : 
         <input type="text" id="useraddress" name="useraddress" placeholder="2NB7ZV1hc3VCDMaGHyjxdafpT8RwYNoJUU6" required/>
         </label> 
+        <input type="hidden" id="parraincode" name="parraincode" value="<?php echo ''.$parraincode.'';?>" />
         <input type="submit" value="Créer mon compte"/></input>
     </form>
 </div>
