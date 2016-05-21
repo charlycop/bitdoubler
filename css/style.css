@@ -32,3 +32,9 @@ div
 	/*height: 300px;*/
 	background-color: rgba(255, 255, 255, 0.5);
 }
+
+td
+{
+	text-align: left;
+	width: 50%;
+}

@@ -6,11 +6,7 @@ include_once('modele/connexion_sql.php');
 require 'vendor/autoload.php';
 use Blocktrail\SDK\BlocktrailSDK;
 
-if (isset($_SESSION['user_id']))
-{
-    include('vue/compte.php');
-}
-elseif (isset($_GET['account'])) 
+if (isset($_GET['account'])) 
 {
     include_once('modele/get_user.php');
     $user = get_user(htmlspecialchars($_GET['account']));
@@ -25,6 +21,11 @@ elseif (isset($_GET['account']))
     $_SESSION['depositaddress'] = $user['depositaddress'];
     $_SESSION['affcode'] = $user['affcode'];
 
+    include('vue/compte.php');
+}
+
+elseif (isset($_SESSION['user_id']))
+{
     include('vue/compte.php');
 }
 

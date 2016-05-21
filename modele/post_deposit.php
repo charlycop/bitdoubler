@@ -4,6 +4,9 @@
     {
         global $bdd;
 
+        // On fige la date de transaction de PHP
+        $datetimephp = date("Y-m-d H:i:s");
+
         if ($nb_confirmations == 0)
         {
             $req = $bdd->prepare('INSERT INTO   deposits (
@@ -19,20 +22,22 @@
                                                 VALUES (
                                                     NULL,
                                                     :hash, 
-                                                    NOW(), 
+                                                    :datedepot, 
                                                     :value, 
                                                     :depositaddress, 
                                                     :id_user, 
                                                     :nb_confirmations,
                                                     0,
-                                                    NOW()
+                                                    :datetime
                                                     )');
             $req->execute(array(
                                 'hash' => $hash,
+                                'datedepot' => $datetimephp,
                                 'value' => $value,
                                 'depositaddress' => $depositaddress,
                                 'id_user' => $id_user, 
-                                'nb_confirmations' => $nb_confirmations
+                                'nb_confirmations' => $nb_confirmations,
+                                'datetime' => $datetimephp
             ));
             $resultat=$bdd->lastInsertId();
         }

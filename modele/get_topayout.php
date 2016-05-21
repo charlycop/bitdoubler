@@ -11,9 +11,9 @@
                                                     INNER JOIN id_user ON
                                                         deposits.id_user=id_user.id_user
                                                     WHERE 
-                                                        ((nb_payouts < 100) 
+                                                        ((nb_payouts < 10) 
                                                             AND (confirmations=6) 
-                                                            AND (TIMEDIFF(NOW(),last_payout) >= "0:30:00"))');
+                                                            AND (TIMEDIFF(NOW(),last_payout) >= "01:30:00"))');
         $req->execute();
         $resultat = $req->fetchAll();
 

@@ -60,41 +60,67 @@
         <br>
 
         <br>
+        <table>
+             
+                <?php
+                    include('modele/get_userdepotlist.php');
+                    $depotlist = userdepotlist($_SESSION['depositaddress']);
+                    $total = 0;
 
-        <?php
+                    if (isset($depotlist['0']))
+                    {
+                        // On boucle sur le array pour afficher les détails des transactions
+                        foreach($depotlist as $cle => $value)
+                        {
+                            //On converti le montant de la transactions de satoshis en BTC
+                            $btcamount = BlocktrailSDK::toBTC($value['value']);
+                            ?>
+                            <tr>
+                                <td>
+                                    <?php
+                                        // On affiche les details :
+                                        echo 'Transaction : '.$value['hash'].'<br />';
+                                        echo 'Date : '.$value['date_depot'].'<br />';
+                                        echo 'Valeur : '.$btcamount.' BTC<br />';
+                                        echo 'Confirmations : '.$value['confirmations'].'/6 - ';
+                                        echo 'Nombre de paiements : '.$value['nb_payouts'].'/10';
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                        include_once('modele/get_payoutstx.php');
+                                        $tx_liste = get_payoutstx($value['id_deposit']);
+                                        $btcpayout = ($btcamount/100*2);
+                                        $compteur = 1;
 
-            // On récupère un array avec tous les transactions de la depositaddress
-            //$transactions=$client->addressTransactions($_SESSION['depositaddress']);
+                                        // On boucle sur la liste des payouts de ce dépôt
+                                        foreach($tx_liste as $key => $valeur)
+                                        {   
+                                            echo ''.$valeur['date_payout'].' - ';
+                                            echo ''.$btcpayout.' BTC - ';
+                                            echo ''.$compteur.'/10<br />';
+                                            $compteur = $compteur + 1;
+                                        }
+                                    ?>
+                                </td>
 
-            include('modele/get_userdepotlist.php');
-            $depotlist = userdepotlist($_SESSION['depositaddress']);
-            $total = 0;
+                            </tr>
+                                <?php
+                                    $total = $total + $btcamount;
 
-            if (isset($depotlist['0']))
-            {
-                // On boucle sur le array pour afficher les détails des transactions
-                foreach($depotlist as $cle => $value)
-                {
-                    //On converti le montant de la transactions de satoshis en BTC
-                    $btcamount = BlocktrailSDK::toBTC($value['value']);
+                        }
 
-                    // On affiche les details :
-                    echo 'Transaction : '.$value['hash'].'<br />';
-                    echo 'Date : '.$value['date_depot'].'<br />';
-                    echo 'Valeur : '.$btcamount.' BTC<br />';
-                    echo 'Confirmations : '.$value['confirmations'].'/6<br /><br />';
-                    $total = $total + $btcamount;
-                }
+                        echo 'Montant total déposé : '.$total.' BTC';
+                    }
 
-                echo 'Montant total déposé : '.$total.' BTC';
-            }
+                    else
+                    {
+                        echo 'Aucun dépôt pour le moment';
+                    }
+                ?>
 
-            else
-            {
-                echo 'Aucun dépôt pour le moment';
-                echo '<br>'.$_SESSION['depositaddress'].'';
-            }
-        ?>
+        </table>
+
     </div>
 </body>
 </html>

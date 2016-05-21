@@ -45,5 +45,5 @@ $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
 $headers .= "\r\n";
 mail($to, $subject, $msg, $headers);
 
-echo 'SALUT';
+echo $deposit;
 ?>
