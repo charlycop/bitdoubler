@@ -121,6 +121,53 @@
 
         </table>
 
+        <br><br>
+       
+        <!--On affiche la liste des dépôts affiliés-->
+        <?php
+            include('modele/get_useraffs.php');
+            $listeaffs = get_useraffs($_SESSION['affcode']);
+        ?>
+        <table>
+            <tr>
+            <th>Deposit date</th>
+            <th>User</th>
+            <th>Deposit Value</th>
+            <th>Your gain</th>
+            <th>Payment</th>
+            </tr>
+            <!--On boucle sur le array pour afficher les détails des transactions-->
+            <?php 
+            foreach($listeaffs as $cle)
+            {   ?>
+
+            <tr>
+                <td>
+                    <?php echo ''.$cle['date_depot'].''; ?>
+                </td>
+                <td>
+                    <?php echo ''.$cle['useradress'].''; ?>
+                </td>
+                <td>
+                    <?php
+                        $btcvalue = BlocktrailSDK::toBTC($cle['value']);
+                        echo ''.$btcvalue.' BTC'; ?>
+                </td>
+                <td>
+                    <?php 
+                        $gainvalue = $btcvalue/100*10 ;
+                        echo ''.$gainvalue.' BTC'; ?>
+                </td>
+                <td>
+                    <a href="https://www.blocktrail.com/tBTC/tx/<?php echo ''.$cle['parrainhash'].''; ?>" target="blank">See</a>
+                </td>
+            </tr>
+            <?php 
+            }
+            ?>
+
+        </table>
+
     </div>
 </body>
 </html>

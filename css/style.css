@@ -35,6 +35,6 @@ div
 
 td
 {
+	border: 1px solid black; /* auront une bordure de 1px */
 	text-align: left;
-	width: 50%;
 }

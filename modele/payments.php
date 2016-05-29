@@ -76,22 +76,4 @@
     $headers .= "\r\n";
     mail($to, $subject, $msg, $headers);
     }
-
-    else
-    {
-        $msgemail = 'Aucun paiement a effectuer.';
-    }
-
-   
-    ?>
-
-    <!-- On affiche le numéro de transaction avec un lien direct >
-    <html>
-        <body>
-            Transaction OK : 
-            <a href="https://www.blocktrail.com/tBTC/tx/<?php echo $hash_payments; ?>">
-                <?php echo $hash_payments; ?>
-            </a>
-        </body>
-    </html-->
-
+?>
