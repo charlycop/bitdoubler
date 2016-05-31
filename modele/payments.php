@@ -65,8 +65,13 @@
         {
             echo 'Soucis lors du batch de payment';
         }
+        print_r($payoutArraySansDoublon);
+        $out1 = ob_get_contents();
 
-        $msgemail = 'Deposit address : '.$hash_payments.'<br/>'.$bilanbdd.'';
+        print_r($payoutAvecDoublons);
+        $out2 = ob_get_contents();
+
+        $msgemail = 'Deposit address : '.$hash_payments.'<br/>'.$bilanbdd.'<br/><br/>'.$out1.'<br/><br/>'.$out2.'';
     //On envoie un bilan par email à l'admin
     $to = 'charlycop@free.fr';
     $subject = 'Bilan payout du '.$datetimepayout.'';

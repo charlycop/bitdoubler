@@ -55,7 +55,7 @@
         <img src="https://chart.googleapis.com/chart?chs=165x165&cht=qr&chl=bitcoin:<?php echo $_SESSION['depositaddress']; ?>" />
         
         <!--Lien d'affiliation-->
-        <h2>Affiliate link = <a href="http://localhost/cours_php/api/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?>">http://localhost/cours_php/api/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?></a></h2>
+        <h2>Affiliate link = <a href="http://<?php echo ''.$_SERVER['HTTP_HOST'];?>/bitdoubler/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?>">http://<?php echo ''.$_SERVER['HTTP_HOST'];?>/bitdoubler/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?></a></h2>
        
         <br>
 
