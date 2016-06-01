@@ -342,10 +342,11 @@ img{
 
 /*CTA Area CSS*/
 
-.cta-area{
+.cta-area, .cta-area h1{
 	background: url(../images/bg/cta.jpg) fixed;
 	background-size:cover;
 	padding:30px 0;
+	color: white;
 }
 
 .cta-offer{

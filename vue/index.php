@@ -9,11 +9,28 @@
 		<meta name="description" content=" a multi purpose landing page">
 		<meta name="author" content="bestpixels">
 		
-		<!-- Fav Icon  -->
-		<link rel="shortcut icon" href="images/ico/favicon.png">
+		    <!-- FAVICONS DEBUT -->
+        <link rel="apple-touch-icon" sizes="57x57" href="css/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="css/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="css/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="css/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="css/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="css/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="css/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="css/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="css/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="css/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="css/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="css/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="css/favicons/favicon-16x16.png">
+        <link rel="manifest" href="css/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="css/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    <!-- FAVICONS FIN -->
 		
 		<!-- Site Title  -->
-		<title>Conerify</title>
+		<title>Conerify by Charlycop</title>
 
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.css" >
@@ -190,24 +207,59 @@
 		<div id="account" class="cta-area parallax">
 			<div class="container">
 				<div class="row">
-					<form action="https://conerify.com/generate" method="post">
-						<input type="hidden" name="_token" value="gvJOawduVeTcwn2doVinFpsf99ObJhFudtCbpQi4">
-													<div class="col-md-2 col-sm-5">
-							<div class="cta-offer hidden-xs">
-								<img src="images/offer.png" alt="offer" />
-							</div>
-						</div>
-						<div class="col-md-7 col-sm-7">
-							<h5>Enter your Bitcoin withdrawal address</h5>
-							<div class="form">
-							<input type="text" name="bitcoin_address" placeholder="Address" value="">
-							</div>
-						
-						</div>
-						<div class="col-md-3 mobile-center">
-							<input type="submit" class="button orange" value="Start Now">
-						</div>
-					</form>
+					<?php
+						if (isset($_GET['account'])) 
+						{
+						    include_once('modele/get_user.php');
+						    $user = get_user(htmlspecialchars($_GET['account']));
+
+						    //On ferme la session vide
+						    session_destroy();
+
+						    // On démarre la réelle session
+						    session_start();
+						    $_SESSION['user_id'] = $user['id_user'];
+						    $_SESSION['useraddress'] = htmlspecialchars($_GET['account']);
+						    $_SESSION['depositaddress'] = $user['depositaddress'];
+						    $_SESSION['affcode'] = $user['affcode'];
+
+						    include('vue/compte.php');
+						}
+
+						else
+						{   
+						    if (isset($_GET['aff']))
+						    {
+						        $parraincode = htmlspecialchars($_GET['aff']);
+						    }
+
+						    else
+						    {
+						        $parraincode = 'parrainunknow';
+						    }
+						    ?>
+							<form enctype="multipart/form-data" action="modele/creation_compte.php" method="post">
+														<div class="col-md-2 col-sm-5">
+															<div class="cta-offer hidden-xs">
+																<img src="images/offer.png" alt="offer" />
+															</div>
+														</div>
+														<div class="col-md-7 col-sm-7">
+															<h5>Enter your Bitcoin withdrawal address</h5>
+															<div class="form">
+															<input type="text" name="useraddress" placeholder="Your bitcoin address here..." value="">
+															</div>
+														
+														</div>
+														<div class="col-md-3 mobile-center">
+															<input type="hidden" id="parraincode" name="parraincode" value="<?php echo ''.$parraincode.'';?>" />
+															<input type="submit" class="button orange" value="Start Now">
+														</div>
+													</form>
+						<?php 
+						} 						
+					?>
+
 				</div>
 			</div>
 		</div>

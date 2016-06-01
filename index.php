@@ -6,40 +6,4 @@ include_once('modele/connexion_sql.php');
 require 'vendor/autoload.php';
 use Blocktrail\SDK\BlocktrailSDK;
 
-if (isset($_GET['account'])) 
-{
-    include_once('modele/get_user.php');
-    $user = get_user(htmlspecialchars($_GET['account']));
-
-    //On ferme la session vide
-    session_destroy();
-
-    // On démarre la réelle session
-    session_start();
-    $_SESSION['user_id'] = $user['id_user'];
-    $_SESSION['useraddress'] = htmlspecialchars($_GET['account']);
-    $_SESSION['depositaddress'] = $user['depositaddress'];
-    $_SESSION['affcode'] = $user['affcode'];
-
-    include('vue/compte.php');
-}
-
-elseif (isset($_SESSION['user_id']))
-{
-    include('vue/compte.php');
-}
-
-else
-{   
-    if (isset($_GET['aff']))
-    {
-        $parraincode = htmlspecialchars($_GET['aff']);
-    }
-
-    else
-    {
-        $parraincode = 'parrainunknow';
-    }
-
-    include('vue/welcome.php');
-}
+include('vue/index.php');
