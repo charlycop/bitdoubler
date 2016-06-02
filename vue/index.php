@@ -284,43 +284,43 @@
 								</div>
 							</div>
 							<div class="bottom text-center red-color">
-																											<ul>
-											<li><strong>0.02183407 BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/377575ad7ec2babd4fa1334626adbd6b8f778b04751c16de1e47b7b388232a31">377575ad7ec2babd4fa133462...</a></li>
-											<li>31.05.2016 / 17:31</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>0.01000000 BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/adc2d70e7f487e4be7c9691ef21eec9b5eb71a9aa73cceaceb7243e7cc2e559b">adc2d70e7f487e4be7c9691ef...</a></li>
-											<li>31.05.2016 / 00:00</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>0.01314747 BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/589e72e63fd8f74cc4dff7b132d608af857e5710fb4f060ccc8c29ca6b166e8d">589e72e63fd8f74cc4dff7b13...</a></li>
-											<li>30.05.2016 / 19:48</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>0.01147228 BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/11bc22459b33493370a52923cccdb7c974e947ccc3fe9cdcfb32085c7247d8d0">11bc22459b33493370a52923c...</a></li>
-											<li>30.05.2016 / 18:21</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>0.03608358 BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/ccaa9242c263e2a405263a98d536960a45e8a9a175275712fbb515af843bd81b">ccaa9242c263e2a405263a98d...</a></li>
-											<li>30.05.2016 / 17:45</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>0.01300000 BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/5e21e3a5b8acde6826c5d762310ec618bcff5d00c547a8cf78a98483353b9a44">5e21e3a5b8acde6826c5d7623...</a></li>
-											<li>30.05.2016 / 16:28</li>
-										</ul>
-										<div class="price-line"></div>
-																								</div>
+								<ul>
+									<li><strong>0.02183407 BTC</strong></li>
+									<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/377575ad7ec2babd4fa1334626adbd6b8f778b04751c16de1e47b7b388232a31">377575ad7ec2babd4fa133462...</a></li>
+									<li>31.05.2016 / 17:31</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>0.01000000 BTC</strong></li>
+									<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/adc2d70e7f487e4be7c9691ef21eec9b5eb71a9aa73cceaceb7243e7cc2e559b">adc2d70e7f487e4be7c9691ef...</a></li>
+									<li>31.05.2016 / 00:00</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>0.01314747 BTC</strong></li>
+									<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/589e72e63fd8f74cc4dff7b132d608af857e5710fb4f060ccc8c29ca6b166e8d">589e72e63fd8f74cc4dff7b13...</a></li>
+									<li>30.05.2016 / 19:48</li>
+								</ul>
+								<div class="price-line"></div>
+																	<ul>
+									<li><strong>0.01147228 BTC</strong></li>
+									<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/11bc22459b33493370a52923cccdb7c974e947ccc3fe9cdcfb32085c7247d8d0">11bc22459b33493370a52923c...</a></li>
+									<li>30.05.2016 / 18:21</li>
+								</ul>
+								<div class="price-line"></div>
+																	<ul>
+									<li><strong>0.03608358 BTC</strong></li>
+									<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/ccaa9242c263e2a405263a98d536960a45e8a9a175275712fbb515af843bd81b">ccaa9242c263e2a405263a98d...</a></li>
+									<li>30.05.2016 / 17:45</li>
+								</ul>
+								<div class="price-line"></div>
+																	<ul>
+									<li><strong>0.01300000 BTC</strong></li>
+									<li><a target="_blank" href="https://www.blocktrail.com/BTC/tx/5e21e3a5b8acde6826c5d762310ec618bcff5d00c547a8cf78a98483353b9a44">5e21e3a5b8acde6826c5d7623...</a></li>
+									<li>30.05.2016 / 16:28</li>
+								</ul>
+								<div class="price-line"></div>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -331,246 +331,61 @@
 								</div>
 							</div>
 							<div class="bottom text-center dark-blue-color">
-																										<ul>
-										<li><strong>0.00039648 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1JwGmWCCjF4mYpRjaishCj1522agHkcYZW</a></li>
-										<li>30.04.2016 / 12:17
-																					(1 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.01250000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1GWeK8zqJCSTS72cTmT6iALYCfLrevJAyP</a></li>
-										<li>30.04.2016 / 12:17
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00029193 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1AeDn8B88zWF5QDgYBJzVH5WqpZ18prPqx</a></li>
-										<li>30.04.2016 / 12:17
-																					(79 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00022600 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1bCbL5XLZbQFijLTdwf65hPDFgaweWEGx</a></li>
-										<li>30.04.2016 / 12:17
-																					(52 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00040000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">186XZUpp5XYprgSGRxWmuwCFVkBPK1KujA</a></li>
-										<li>30.04.2016 / 12:17
-																					(52 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1D38fvdVKhmsGM1MgwAWPE4zXQ3zpdZbCX</a></li>
-										<li>30.04.2016 / 12:17
-																					(34 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00500000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1BhateeusSeDnM58Yu7NUjsU1J3JwYxQ2d</a></li>
-										<li>30.04.2016 / 12:17
-																					(29 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00026672 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1M92RCDW7Ymd8uZfUrMRcwUVYDd9LwvjkR</a></li>
-										<li>30.04.2016 / 12:17
-																					(25 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00200000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1Kvo4HpUi3Gt9ReJghFt4eh8YoTjRWQNG8</a></li>
-										<li>30.04.2016 / 12:17
-																					(11 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00083320 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">16ZrvVaphbiXikkGv4NWKAV7arGnTtHyHU</a></li>
-										<li>30.04.2016 / 12:17
-																					(7 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1BUWobN94ALqHtZLagVhzgHZbLHGJqtGLR</a></li>
-										<li>30.04.2016 / 12:17
-																					(66 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00442420 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1CmFKUL3Gh29ZMtk5NrTShpyuHMQcuVhmG</a></li>
-										<li>30.04.2016 / 12:17
-																					(39 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1AzT9Y1L5AiNJBngdkW1UjnSg1geaV2ZQV</a></li>
-										<li>30.04.2016 / 12:17
-																					(90 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1DY7RtVpYBMTDoyBy9oitjw66J2AALQ8Sj</a></li>
-										<li>30.04.2016 / 12:17
-																					(28 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">14SfxW33QBN7hkKTB45YkDBECZV1C895dn</a></li>
-										<li>30.04.2016 / 12:17
-																					(41 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00442000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1EYiuATVXZCWW46mj5x5pyhSKSajVrFLgT</a></li>
-										<li>30.04.2016 / 12:17
-																					(20 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1C5xBMNLMYf1Kbes89S6ABfyq42emTVV7D</a></li>
-										<li>30.04.2016 / 12:17
-																					(32 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1Ak5krLbL1YqtmMns7AVXaCsgEFpFzHELA</a></li>
-										<li>30.04.2016 / 12:17
-																					(84 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00021579 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">13p8aFScXH4BVGh6L1onTUzfH6ts2xc5KH</a></li>
-										<li>30.04.2016 / 12:17
-																					(72 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00036000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1AJFEsF7HjtsgFPg3jdkDAWuLM9JYfGew2</a></li>
-										<li>30.04.2016 / 12:17
-																					(98 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00022000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1JyTeu54KU3ueeFFFeGzMSiCThGGtYVibG</a></li>
-										<li>30.04.2016 / 12:17
-																					(27 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00075761 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1CTgMbScEgmnVxCCzHB8UVzcGZqCf6RcFF</a></li>
-										<li>30.04.2016 / 12:17
-																					(2 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">3APB4qM32x1zbafhvfiGG65DRzfdYQwq6m</a></li>
-										<li>30.04.2016 / 12:17
-																					(64 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00100000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1Ks7pbptywMfdAg7yn8kfoXkte7D4bt3BR</a></li>
-										<li>30.04.2016 / 12:17
-																					(20 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00079857 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1N968pDoumbTrUcbJQ23Dnmt8KicHQF694</a></li>
-										<li>30.04.2016 / 12:17
-																					(50 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1Jis49KxPEoQwcVgmzChv1Rj8vAE6P93XK</a></li>
-										<li>30.04.2016 / 12:17
-																					(30 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00241944 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1EmmRGhmKBzLqwMtdETx6GXADaSgRVMPMX</a></li>
-										<li>30.04.2016 / 12:17
-																					(12 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1FwY7Th9w17QTPfGXJ8n4jM5gWYGQnVeS4</a></li>
-										<li>30.04.2016 / 12:17
-																					(27 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00400000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">18m2AP43TzwtFh1Hb9iHitjaL4kFheEUa8</a></li>
-										<li>30.04.2016 / 12:17
-																					(10 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																		<ul>
-										<li><strong>0.00020000 BTC</strong></li>
-										<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1Lzemw2U6AWxQVGE2jtJTbuzy14LabmYyE</a></li>
-										<li>30.04.2016 / 12:17
-																					(59 / 100)
-																				</li>
-									</ul>
-									<div class="price-line"></div>
-																									
+								<ul>
+									<li><strong>0.00039648 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1JwGmWCCjF4mYpRjaishCj1522agHkcYZW</a></li>
+									<li>30.04.2016 / 12:17
+																				(1 / 100)
+									</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>0.01250000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1GWeK8zqJCSTS72cTmT6iALYCfLrevJAyP</a></li>
+									<li>30.04.2016 / 12:17
+									</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>0.00029193 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1AeDn8B88zWF5QDgYBJzVH5WqpZ18prPqx</a></li>
+									<li>30.04.2016 / 12:17
+																				(79 / 100)
+									</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>0.00022600 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1bCbL5XLZbQFijLTdwf65hPDFgaweWEGx</a></li>
+									<li>30.04.2016 / 12:17
+																				(52 / 100)
+									</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>0.00040000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">186XZUpp5XYprgSGRxWmuwCFVkBPK1KujA</a></li>
+									<li>30.04.2016 / 12:17
+																				(52 / 100)
+									</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>0.00020000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1D38fvdVKhmsGM1MgwAWPE4zXQ3zpdZbCX</a></li>
+									<li>30.04.2016 / 12:17
+																				(34 / 100)
+									</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>0.00500000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/dd12f72e432199cffe564a9d23d2a5baf68f1a8ff7f17655f4d344b18189e707" target="_blank">1BhateeusSeDnM58Yu7NUjsU1J3JwYxQ2d</a></li>
+									<li>30.04.2016 / 12:17
+																				(29 / 100)
+									</li>
+								</ul>
+								<div class="price-line"></div>
 							</div>
 						</div>
 					</div>
@@ -583,187 +398,61 @@
 								</div>
 							</div>
 							<div class="bottom text-center blue-color">
-																											<ul>
-											<li><strong>8.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/3cb64c0d43b267b35cc174ccf7fa88b770e0c6c36e55194e8b14834265b4bf35" target="_blank">3cb64c0d43b267b35cc174ccf...</a></li>
-											<li>30.04.2016 / 15:44 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>8.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/59ec6c1d2d2077d08d070f238813f14d31fb798e9250cd16af045d69a69287f1" target="_blank">59ec6c1d2d2077d08d070f238...</a></li>
-											<li>30.04.2016 / 16:42 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>6.37299433 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/53eb64c1619f95ca9fb2a133b3ab352e234c0979f652f6b3433d99139ed76daf" target="_blank">53eb64c1619f95ca9fb2a133b...</a></li>
-											<li>30.04.2016 / 04:13 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>6.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/2904e67141266fdb1c4d57a66315dc3a20d6cf28064c795dde66610f21229304" target="_blank">2904e67141266fdb1c4d57a66...</a></li>
-											<li>30.04.2016 / 12:39 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>5.09063109 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/64b7fff4b62db0521626d3393d42dc4e5c89ccbf7ac759d760e101e6989d7b5c" target="_blank">64b7fff4b62db0521626d3393...</a></li>
-											<li>30.04.2016 / 06:32 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>5.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/03c9640440c8a63f42f9a78cf34b403e5f528b0b4c60108022a77716e46cc404" target="_blank">03c9640440c8a63f42f9a78cf...</a></li>
-											<li>01.05.2016 / 04:07 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>5.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/39c47415e7c36b469589e482a812aa13b882e719736eebf7b499fbbcbf411dd2" target="_blank">39c47415e7c36b469589e482a...</a></li>
-											<li>28.04.2016 / 04:26 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>5.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/0cff6005c23a6c61fd2aa6c770df9529305c8127c85332fbdfa9a2ead81bcade" target="_blank">0cff6005c23a6c61fd2aa6c77...</a></li>
-											<li>29.04.2016 / 00:40 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>5.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/895406414232d67a41c21141522813545aa8252f30d42fa256512bb1d456cd17" target="_blank">895406414232d67a41c211415...</a></li>
-											<li>30.04.2016 / 02:35 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>4.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/19bfaeb862582dcc06730b38603700a844508d35c43c2823d18b7946c0af5fef" target="_blank">19bfaeb862582dcc06730b386...</a></li>
-											<li>30.04.2016 / 13:37 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>3.99990000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/a30af35e23d1a578554f1ece263533ae4ccef6ae3acc70a37156fab2bed03e52" target="_blank">a30af35e23d1a578554f1ece2...</a></li>
-											<li>30.04.2016 / 10:16 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>3.70738219 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/c06c8cb04fad47acf8ab07f13a3a0e23803fbe35cff575e89c8e6c839c218514" target="_blank">c06c8cb04fad47acf8ab07f13...</a></li>
-											<li>29.04.2016 / 11:14 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>3.50000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/6b93dd4ced13accc1ff33c27786c93812c73e11f7598266ff2da734a0e981c1f" target="_blank">6b93dd4ced13accc1ff33c277...</a></li>
-											<li>30.04.2016 / 15:06 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>3.02856881 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/4ac1c083934ea5dfa7791cfb0b50ab6b86ac6b98fe18ec812858fbc1e3d0e19d" target="_blank">4ac1c083934ea5dfa7791cfb0...</a></li>
-											<li>28.04.2016 / 20:12 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>3.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/cc8b534f9de547febf5219eaab5c2f280b48c8da18e76859eedc8bd1505b135c" target="_blank">cc8b534f9de547febf5219eaa...</a></li>
-											<li>29.04.2016 / 05:37 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>3.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/bb00ce4b9cd9c7828b20069f59ada8dd6c9e32f230d9a35f0491ea497759d4f5" target="_blank">bb00ce4b9cd9c7828b20069f5...</a></li>
-											<li>29.04.2016 / 17:07 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>3.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/b4ca1f6459e4bd4ec6613bb8d66b4427dceca8dd7685d12dc9964ee805e5fa55" target="_blank">b4ca1f6459e4bd4ec6613bb8d...</a></li>
-											<li>30.04.2016 / 01:55 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>3.00000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/5cb3f2d64c6a0accef497b2349fc3a5ec58e4dd1dc6afcf58817017b1c1d9c0d" target="_blank">5cb3f2d64c6a0accef497b234...</a></li>
-											<li>30.04.2016 / 07:18 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.50000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/46602b70b47ca88fe4d308aed034295990ca3f85cd51ba45223a43d730a7411c" target="_blank">46602b70b47ca88fe4d308aed...</a></li>
-											<li>28.04.2016 / 07:55 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.40000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/7c7cc6a13041bd67d25271c59908591c9fd0c57ad4cc0d019502545891f8afea" target="_blank">7c7cc6a13041bd67d25271c59...</a></li>
-											<li>24.04.2016 / 01:59 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.30000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/f74726bb36a58552b18d472bca7bdaff0df57c8355d310a43d8cb734980630a1" target="_blank">f74726bb36a58552b18d472bc...</a></li>
-											<li>29.04.2016 / 04:58 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.23710990 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/9f23a56f1dac6959e71dce45fd4df9831f94a5c3e9302ea997e7da2553ca2344" target="_blank">9f23a56f1dac6959e71dce45f...</a></li>
-											<li>29.04.2016 / 03:27 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.23210000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/4690a6957ffb82f66a67af0851d23e7febcb5ebf93a65270dc0859b60775d052" target="_blank">4690a6957ffb82f66a67af085...</a></li>
-											<li>29.04.2016 / 14:13 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.22100000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/9bdabc371e03b771cbcac628596b0ab33fbc0c89219014884a70959d2e0916e1" target="_blank">9bdabc371e03b771cbcac6285...</a></li>
-											<li>29.04.2016 / 09:36 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.20379219 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/e867e14ea1d4349830e570548b9dec6adf41d24ef0f20931788c5ec10057c0e6" target="_blank">e867e14ea1d4349830e570548...</a></li>
-											<li>30.04.2016 / 12:38 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.19975436 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/6c18bf66444efec3f4f8503de8c6905ed929d9fccaf7d8d6bce88a0bfcb414a7" target="_blank">6c18bf66444efec3f4f8503de...</a></li>
-											<li>30.04.2016 / 06:43 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.16156962 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/c9501107efabb925f6f509849d3e4d36823270e9944efd13b20ca11145091149" target="_blank">c9501107efabb925f6f509849...</a></li>
-											<li>29.04.2016 / 16:00 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.16000000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/751daa04aaeeeefc326e197a231de0a12bcc1d641361ec790ae59fc9edabbf4e" target="_blank">751daa04aaeeeefc326e197a2...</a></li>
-											<li>25.04.2016 / 10:46 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.09700000 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/ff907738c7cb5d183c1f4d218968eb7a3427a36434d48cf85dd258c402100245" target="_blank">ff907738c7cb5d183c1f4d218...</a></li>
-											<li>24.04.2016 / 14:52 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																			<ul>
-											<li><strong>2.04395604 BTC</strong></li>
-											<li><a href="https://www.blocktrail.com/BTC/tx/73648575a46393608b5dfadbe9813b09235de844730ba79040118e438cd8533e" target="_blank">73648575a46393608b5dfadbe...</a></li>
-											<li>29.04.2016 / 20:17 (100 / 100)</li>
-										</ul>
-										<div class="price-line"></div>
-																								</div>
+								<ul>
+									<li><strong>8.00000000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/3cb64c0d43b267b35cc174ccf7fa88b770e0c6c36e55194e8b14834265b4bf35" target="_blank">3cb64c0d43b267b35cc174ccf...</a></li>
+									<li>30.04.2016 / 15:44 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>8.00000000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/59ec6c1d2d2077d08d070f238813f14d31fb798e9250cd16af045d69a69287f1" target="_blank">59ec6c1d2d2077d08d070f238...</a></li>
+									<li>30.04.2016 / 16:42 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>6.37299433 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/53eb64c1619f95ca9fb2a133b3ab352e234c0979f652f6b3433d99139ed76daf" target="_blank">53eb64c1619f95ca9fb2a133b...</a></li>
+									<li>30.04.2016 / 04:13 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>6.00000000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/2904e67141266fdb1c4d57a66315dc3a20d6cf28064c795dde66610f21229304" target="_blank">2904e67141266fdb1c4d57a66...</a></li>
+									<li>30.04.2016 / 12:39 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>5.09063109 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/64b7fff4b62db0521626d3393d42dc4e5c89ccbf7ac759d760e101e6989d7b5c" target="_blank">64b7fff4b62db0521626d3393...</a></li>
+									<li>30.04.2016 / 06:32 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>5.00000000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/03c9640440c8a63f42f9a78cf34b403e5f528b0b4c60108022a77716e46cc404" target="_blank">03c9640440c8a63f42f9a78cf...</a></li>
+									<li>01.05.2016 / 04:07 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>5.00000000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/39c47415e7c36b469589e482a812aa13b882e719736eebf7b499fbbcbf411dd2" target="_blank">39c47415e7c36b469589e482a...</a></li>
+									<li>28.04.2016 / 04:26 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>5.00000000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/0cff6005c23a6c61fd2aa6c770df9529305c8127c85332fbdfa9a2ead81bcade" target="_blank">0cff6005c23a6c61fd2aa6c77...</a></li>
+									<li>29.04.2016 / 00:40 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>
+								<ul>
+									<li><strong>5.00000000 BTC</strong></li>
+									<li><a href="https://www.blocktrail.com/BTC/tx/895406414232d67a41c21141522813545aa8252f30d42fa256512bb1d456cd17" target="_blank">895406414232d67a41c211415...</a></li>
+									<li>30.04.2016 / 02:35 (100 / 100)</li>
+								</ul>
+								<div class="price-line"></div>	
+							</div>
 						</div>
 					</div>
 					<div class="col-sm-3"></div>
@@ -861,11 +550,11 @@
 							<div class="col-md-6 col-sm-8">
 								<div class="form">
 									<form  action="https://conerify.com/send" method="post" class="contact-form text-center">
-																															<input type="hidden" name="_token" value="gvJOawduVeTcwn2doVinFpsf99ObJhFudtCbpQi4">
-										<div id="top_secret_wrap" style="display:none;">
-<input name="top_secret" type="text" value="" id="top_secret"/>
-<input name="gen_time" type="text" value="eyJpdiI6InM1N2ZjeGgyOWFBNklzV0RnXC9XUUZ3PT0iLCJ2YWx1ZSI6Im5HRHc5UTdYUnE3bGNDa1MyNVRidWc9PSIsIm1hYyI6Ijk0OWFlMDlkOWFkODkzNDFkM2RhMTY3NTk4YmIyYjY4ZjEwZjcyYTkxMWI0ZmE4YzE0YjQ3MDA5NDZhOTQwYWMifQ=="/>
-</div>
+										<input type="hidden" name="_token" value="gvJOawduVeTcwn2doVinFpsf99ObJhFudtCbpQi4">
+											<div id="top_secret_wrap" style="display:none;">
+											<input name="top_secret" type="text" value="" id="top_secret"/>
+											<input name="gen_time" type="text" value="eyJpdiI6InM1N2ZjeGgyOWFBNklzV0RnXC9XUUZ3PT0iLCJ2YWx1ZSI6Im5HRHc5UTdYUnE3bGNDa1MyNVRidWc9PSIsIm1hYyI6Ijk0OWFlMDlkOWFkODkzNDFkM2RhMTY3NTk4YmIyYjY4ZjEwZjcyYTkxMWI0ZmE4YzE0YjQ3MDA5NDZhOTQwYWMifQ=="/>
+											</div>
 										<!-- IF MAIL SENT SUCCESSFULLY -->
 										
 										
