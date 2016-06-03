@@ -72,7 +72,7 @@
 							<a href="#form-area" class="button red go-form">Support <img src="images/support.png" alt="" /> </a>
 							<a  style="text-transform: uppercase;" href="#" id="lang" class="button blue"><img src="images/flags/en.svg" alt="" style="height:26px;width:26px;border-radius:15px;" /> en </a>
 							<ul id="langsel">
-								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/pt.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> pt </a></li> 
+								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/cn.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> pt </a></li> 
 								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/ru.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> ru </a></li> 
 								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/fr.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> fr </a></li> 
 								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/id.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> id </a></li> 
@@ -84,7 +84,7 @@
 				<div class="home-more-area">
 					<div class="row">
 						<div class="col-md-6 tab-center">
-							<img src="images/home.png" alt="home" />
+							<img src="images/home2.png" alt="home" />
 						</div>
 						<div class="col-md-6 text-center">
 							<div class="home-right">
@@ -94,9 +94,9 @@
 										<h4>0.01 BTC</h4>
 									</div>
 								</div>
-								<h6>Most popular way to</h6>
-								<h2>Multiply your Bitcoin</h2>
-								<h5>This is your moment!</h5>
+								<h6>This is your moment!</h6>
+								<h2>Double your bitcoins</h2>
+								<h5>in 200h, receive 200 instant payment of 1%</h5>
 								<ul>
 									<li><a href="#" class="button orange more-feature">More Features</a></li>
 									<li><a href="#" class="button blue scroll-account">Get Started Now!</a></li>

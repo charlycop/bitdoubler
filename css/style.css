@@ -139,7 +139,7 @@ img{
 /*Home Area CSS*/
 
 .home-area{
-	background: url(../images/bg/home.jpg) fixed;
+	background: url(../images/bg/home6.jpg) fixed;
 	background-size:cover;
 }
 .top-bar{
@@ -343,7 +343,7 @@ img{
 /*CTA Area CSS*/
 
 .cta-area, .cta-area h1{
-	background: url(../images/bg/cta.jpg) fixed;
+	background: url(../images/bg/cta2.jpg) fixed;
 	background-size:cover;
 	padding:30px 0;
 	color: white;
