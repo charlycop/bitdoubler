@@ -468,8 +468,8 @@
 										<input id="cf-email" type="email" name="email" placeholder="Your Email" value="" required>
 										<input id="cf-address" type="text" name="useraddress" placeholder="Your Bitcoin address" value="" required>
 										<textarea name="message" placeholder="Your message" required></textarea> 
-										<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" /><a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
-										<input type="text" name="captcha_code" size="10" maxlength="6" placeholder="Write here the captcha code"/>
+										<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" /><a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false"> <img src="securimage/images/refresh.png"></a>
+										<input type="text" name="captcha_code" size="2" maxlength="6" placeholder="Write here the captcha code"/>
 										<input type="submit" class="button red" value="Send Message !" />
 									</form>
 								</div>
