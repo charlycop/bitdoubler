@@ -639,7 +639,7 @@ img{
 	border:none;
 	padding-left:15px;
 	margin:7px 0;
-	border:1px solid #cacaca;
+	color: black;
 }
 .form textarea {
 	height: 200px;

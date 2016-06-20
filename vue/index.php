@@ -463,22 +463,13 @@
 							<div class="col-md-3 col-sm-2"></div>
 							<div class="col-md-6 col-sm-8">
 								<div class="form">
-									<form  action="https://conerify.com/send" method="post" class="contact-form text-center">
-										<input type="hidden" name="_token" value="gvJOawduVeTcwn2doVinFpsf99ObJhFudtCbpQi4">
-											<div id="top_secret_wrap" style="display:none;">
-											<input name="top_secret" type="text" value="" id="top_secret"/>
-											<input name="gen_time" type="text" value="eyJpdiI6InM1N2ZjeGgyOWFBNklzV0RnXC9XUUZ3PT0iLCJ2YWx1ZSI6Im5HRHc5UTdYUnE3bGNDa1MyNVRidWc9PSIsIm1hYyI6Ijk0OWFlMDlkOWFkODkzNDFkM2RhMTY3NTk4YmIyYjY4ZjEwZjcyYTkxMWI0ZmE4YzE0YjQ3MDA5NDZhOTQwYWMifQ=="/>
-											</div>
-										<!-- IF MAIL SENT SUCCESSFULLY -->
-										
-										
-
-										<!-- IF MAIL SENDING UNSUCCESSFULL -->
-																
+									<form  action="modele/send_mail.php" method="post" class="contact-form text-center">
 										<input id="cf-name" type="text" name="full_name" placeholder="Your Name" value="">
-										<input id="cf-email" type="email" name="email" placeholder="Your Email" value="">
-										<input id="cf-address" type="text" name="bitcoin_address" placeholder="Your Bitcoin address" value="">
-										<textarea name="message" placeholder="Your message"></textarea> 
+										<input id="cf-email" type="email" name="email" placeholder="Your Email" value="" required>
+										<input id="cf-address" type="text" name="useraddress" placeholder="Your Bitcoin address" value="" required>
+										<textarea name="message" placeholder="Your message" required></textarea> 
+										<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" /><a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
+										<input type="text" name="captcha_code" size="10" maxlength="6" placeholder="Write here the captcha code"/>
 										<input type="submit" class="button red" value="Send Message !" />
 									</form>
 								</div>
