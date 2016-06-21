@@ -46,10 +46,32 @@ else
 			}
 	}
 
-
-
 // On insert les textes dans la langue
 include_once('vue/translations/'.$lang.'.php');
+
+//On traite les messages d'erreurs
+if (isset($_GET['mail']) AND ((htmlspecialchars($_GET['mail']) == 'ok') OR (htmlspecialchars($_GET['mail']) == 'unknownok') OR (htmlspecialchars($_GET['mail']) == 'btcaddressnok') OR (htmlspecialchars($_GET['mail']) == 'captchanok')))
+	{
+		if (htmlspecialchars($_GET['mail']) == 'ok')
+			{	
+				$error = $emailok;
+			}
+
+			elseif (htmlspecialchars($_GET['mail']) == 'unknownok') 
+			{
+				$error = $emailnok;
+			}
+
+			elseif (htmlspecialchars($_GET['mail']) == 'captchanok')
+			{
+				$error = $captchanok;
+			}
+
+		else
+			{
+				$error = $emailnokbtc;
+			}
+	}
 
 //On charge le SDK de blocktrail
 require 'vendor/autoload.php';

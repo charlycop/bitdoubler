@@ -8,12 +8,9 @@ $securimage = new Securimage();
 
 if ($securimage->check($_POST['captcha_code']) == false) 
 	{
-		// the code was incorrect
-		// you should handle the error so that the form processor doesn't continue
-
-		// or you can use the following code if there is no validation or you do not know how
-
-		exit;
+		// Si il y a erreur sur le code captcha
+        header('Location: ../index.php?mail=captchanok#form-area');
+        exit();
 	}
 
 // On sécurise les données
@@ -46,21 +43,18 @@ if (adresschecker($useraddress))
 		if (mail($to, $subject, $message, implode("\r\n", $headers))) 
 		{
         //Puis on renvoie sur monsiteweb.org, if permet de tester si mail() à bien fonctioné (ceci ne garanti pas que le mail sera recu, mais c'est un début)
-        //header('Location: ../index.php');
-			echo "mail envoye";
+        header('Location: ../index.php?mail=ok#form-area');
         }
 
         else {
         // Si il y a erreur on renvoie sur le site
-        echo 'Erreur pendant l\'envoi de l\'email';
-        echo "Please go <a href='javascript:history.go(-1)'>back</a> and try again.";
-        exit();
+        header('Location: ../index.php?mail=unknownok#form-area');
         }
 	}
 else
 	{
-		echo "The bitcoin address is invalid.<br /><br />";
-		echo "Please go <a href='javascript:history.go(-1)'>back</a> and try again.";
+		//renvoi sur le site car l'adresse btc n'est pas valide
+		header('Location: ../index.php?mail=btcaddressnok#form-area');
 	}
 
 

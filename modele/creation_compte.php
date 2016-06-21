@@ -49,7 +49,7 @@ if (adresschecker($useraddress))
 		    $_SESSION['depositaddress'] = $depositaddress;
 		    $_SESSION['affcode'] = $affcode;
 		}
-	header('Location: ../index.php?account='.$useraddress.'');
+	header('Location: ../index.php?account='.$useraddress.'#account');
 	}
 
 else

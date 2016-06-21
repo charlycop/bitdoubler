@@ -476,12 +476,19 @@
 							<div class="col-md-6 col-sm-8">
 								<div class="form">
 									<form  action="modele/send_mail.php" method="post" class="contact-form text-center">
+										<!-- Message d'erreur si nécessaire -->
+										<?php
+											if (isset($error)) 
+												{?>
+													<p id="error"><?php echo $error; ?></p>
+												<?php } ?>
+										
 										<input id="cf-name" type="text" name="full_name" placeholder="<?php echo $formnameplaceholder; ?>" value="">
 										<input id="cf-email" type="email" name="email" placeholder="<?php echo $formemailplaceholder; ?>" value="" required>
 										<input id="cf-address" type="text" name="useraddress" placeholder="<?php echo $formaddressplaceholder; ?>" value="" required>
 										<textarea name="message" placeholder="<?php echo $formmessageplaceholder; ?>" required></textarea> 
 										<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" /><a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false"> <img src="securimage/images/refresh.png"></a>
-										<input type="text" name="captcha_code" size="2" maxlength="6" placeholder="<?php echo $formcaptchaplaceholder; ?>"/>
+										<input type="text" name="captcha_code" size="10" maxlength="6" placeholder="<?php echo $formcaptchaplaceholder; ?>"/>
 										<input type="submit" class="button red" value="<?php echo $formsendbutton; ?>" />
 									</form>
 								</div>

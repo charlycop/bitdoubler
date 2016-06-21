@@ -79,3 +79,9 @@ $formsendbutton = "Send Message !";
 
 $footerweaccept = "We Accept";
 $footercopyrights = "All rights reserved Copyright &copy; 2016";
+
+// Error message for email form
+$emailok = "Our customer service got your message, we will answer shortly !";
+$emailnok = "Something went wrong, please try again later";
+$emailnokbtc = "The bitcoin address you entered is invalid, please verify it and try again.";
+$captchanok = "The Captcha code is incorrect, please try again";
