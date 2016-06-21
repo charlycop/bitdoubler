@@ -55,7 +55,27 @@
 		<![endif]-->
 		
 	</head>
-	<body>
+	
+<!-- On affiche une popup en cas d'erreur dans la syntaxe de l'adresse btc pour créer le compte-->
+<?php
+	if (isset($_GET['create']) AND htmlspecialchars($_GET['create']) == 'btcnok')
+		{?>
+				<script>
+					function myFunction() {
+					    alert("<?php echo $btcnok; ?>");
+					}
+				</script>
+
+
+			<body onload="myFunction()">
+		<?php }
+
+	else
+		{?>
+			<body>
+		<?php }
+?>
+	
 		
 		<div class="home-area parallax">
 			<div class="container">
@@ -263,7 +283,7 @@
 														<div class="col-md-7 col-sm-7">
 															<h5><?php echo $subscriptionformtitle; ?></h5>
 															<div class="form">
-															<input type="text" name="useraddress" placeholder="<?php echo $subscriptionformplaceholder; ?>" value="">
+															<input type="text" name="useraddress" placeholder="<?php echo $subscriptionformplaceholder; ?>" value="" required>
 															</div>
 														
 														</div>

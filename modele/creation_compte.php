@@ -54,9 +54,6 @@ if (adresschecker($useraddress))
 
 else
 	{
-		echo "L'adresse BTC n'est pas correcte.";
-        ?>
-        <br><a href="../index.php">Retour</a>
-        <?php
+		header('Location: ../index.php?create=btcnok#account');
 	}
 ?>

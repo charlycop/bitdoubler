@@ -85,3 +85,6 @@ $emailok = "Our customer service got your message, we will answer shortly !";
 $emailnok = "Something went wrong, please try again later";
 $emailnokbtc = "The bitcoin address you entered is invalid, please verify it and try again.";
 $captchanok = "The Captcha code is incorrect, please try again";
+
+// Error message for subscription
+$btcnok = "The bitcoin address syntax you just entered is invalid, please verify it and try again";
