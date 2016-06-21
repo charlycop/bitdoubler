@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="js">
+<html lang="<?php echo $lang; ?>" class="js">
 <?php
     require 'vendor/autoload.php';
     use Blocktrail\SDK\BlocktrailSDK;
     $client = new BlocktrailSDK("c614645a7f5d94b961ec3ed3dbd036c64ba42f34", "ef41c854d7fb246f5a4445d07cb9fe2a5b25a15f", "BTC", true /* testnet */);
 ?>	
-<!-- Mirrored from conerify.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 May 2016 19:31:52 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content=" a multi purpose landing page">
-		<meta name="author" content="bestpixels">
+		<meta name="description" content="<?php echo $metadescription; ?>">
 		
 		    <!-- FAVICONS DEBUT -->
         <link rel="apple-touch-icon" sizes="57x57" href="css/favicons/apple-icon-57x57.png">
@@ -34,7 +31,7 @@
     <!-- FAVICONS FIN -->
 		
 		<!-- Site Title  -->
-		<title>Conerify by Charlycop</title>
+		<title><?php echo $pagetitle; ?></title>
 
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.css" >
@@ -69,14 +66,14 @@
 							<div class="logo"><a href="#"><img src="images/logo.png" alt="logo" /></a></div>
 						</div>
 						<div class="col-md-6 col-sm-6 text-right mobile-center">
-							<a href="#form-area" class="button red go-form">Support <img src="images/support.png" alt="" /> </a>
-							<a  style="text-transform: uppercase;" href="#" id="lang" class="button blue"><img src="images/flags/en.svg" alt="" style="height:26px;width:26px;border-radius:15px;" /> en </a>
+							<a href="#form-area" class="button red go-form"><?php echo $support; ?><img src="images/support.png" alt="" /> </a>
+							<a style="text-transform: uppercase;" href="index.php?lang=<?php echo $lang; ?>" id="lang" class="button blue">
+								<img src="images/flags/<?php echo $lang; ?>.svg" alt="" style="height:26px;width:26px;border-radius:15px;" /> <?php echo $lang; ?> 
+							</a>
+									
 							<ul id="langsel">
-								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/cn.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> pt </a></li> 
-								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/ru.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> ru </a></li> 
-								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/fr.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> fr </a></li> 
-								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/id.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> id </a></li> 
-								<li><a style="text-transform: uppercase;" href="index.html" id="lang"><img src="images/flags/es.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> es </a></li> 
+								<li><a style="text-transform: uppercase;" href="index.php?lang=<?php echo $langliste; ?>" id="lang">
+									<img src="images/flags/<?php echo $langliste; ?>.svg" alt="" style=" height:26px;width:26px;border-radius:15px;" /> <?php echo $langliste; ?> </a></li> 
 							</ul> 
 						</div>
 					</div>
@@ -90,16 +87,30 @@
 							<div class="home-right">
 								<div class="featured-offer">
 									<div class="featured-offer-innr">
-										<p>Minimal:</p>
+										<p><?php echo $minimal; ?></p>
 										<h4>0.01 BTC</h4>
 									</div>
 								</div>
-								<h6>This is your moment!</h6>
-								<h2>Double your bitcoins</h2>
-								<h5>in 200h, receive 200 instant payment of 1%</h5>
+								<h6><?php echo $baseline1; ?></h6>
+								<h2><?php echo $baseline2; ?></h2>
+								<h5><?php echo $baseline3; ?></h5>
 								<ul>
-									<li><a href="#" class="button orange more-feature">More Features</a></li>
-									<li><a href="#" class="button blue scroll-account">Get Started Now!</a></li>
+									<li><a href="#" class="button orange more-feature"><?php echo $morefeaturestitle; ?></a></li>
+									<li>
+										<a href="#" class="button blue scroll-account">
+											<?php 
+											if (isset($_SESSION['user_id']))
+												{
+													echo $myaccount;
+												}
+
+											else
+												{
+													echo $getstarted;
+												}
+											?>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -117,26 +128,26 @@
 							<div class="col-md-4 col-sm-6">
 								<div class="single-feature">
 									<img src="images/features-icon/large/1.png" alt="features" />
-									<h6>Register account</h6>
+									<h6><?php echo $mainpoint1a; ?></h6>
 									<div class="fetu-line"></div>
-									<p>Account registration is just one simple step - enter your Bitcoin address and your account is active.</p>
+									<p><?php echo $mainpoint1b; ?></p>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-6">
 								<div class="single-feature">
 									<img src="images/features-icon/large/2.png" alt="features" />
-									<h6>Send Bitcoin</h6>
+									<h6><?php echo $mainpoint2a; ?></h6>
 									<div class="fetu-line"></div>
-									<p>Make payment to your Bitcoin deposit address what is generated when you make an account.</p>
+									<p><?php echo $mainpoint2b; ?></p>
 								</div>
 							</div>
 							<div class="col-sm-3"></div>
 							<div class="col-md-4 col-sm-6">
 								<div class="single-feature">
 									<img src="images/features-icon/large/3.png" alt="features" />
-									<h6>Start earning</h6>
+									<h6><?php echo $mainpoint3a; ?></h6>
 									<div class="fetu-line"></div>
-									<p>When your payment will be confirmed starting from next hour you will start to receive interest payments.</p>
+									<p><?php echo $mainpoint3b; ?></p>
 								</div>
 							</div>
 							<div class="col-sm-3"></div>
@@ -152,8 +163,8 @@
 					<div class="row text-center">
 						<div class="col-md-3"></div>
 						<div class="col-md-6">
-							<h3>Conerify&#039;s More Features</h3>
-							<p>Benefit from us, the best performance, and professional customer service. Allow us the opportunity to exceed your expectations.</p>
+							<h3><?php echo $morefeaturestitle; ?></h3>
+							<p><?php echo $morefeaturesbaseline; ?></p>
 						</div>
 						<div class="col-md-3"></div>
 					</div>
@@ -163,43 +174,43 @@
 					<div class="col-md-4 col-sm-6">
 						<div class="single-more-features">
 							<img src="images/features-icon/small/1.png" alt="features" />
-							<h6>Data Security</h6>
-							<p>We provide fully encrypted connection to our servers, all your data will always be secure.</p>
+							<h6><?php echo $feature1a; ?></h6>
+							<p><?php echo $feature1b; ?></p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="single-more-features">
 							<img src="images/features-icon/small/2.png" alt="features" />
-							<h6>Data Monitoring</h6>
-							<p>We monitor incoming/outgoing transfers 24/7, which  guarantee of that no payment will be missed.</p>
+							<h6><?php echo $feature2a; ?></h6>
+							<p><?php echo $feature2b; ?></p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="single-more-features">
 							<img src="images/features-icon/small/3.png" alt="features" />
-							<h6>24/7 Support</h6>
-							<p>We are here 24/7/365 to assist you with any case or issue that you have with Conerify.</p>
+							<h6><?php echo $feature3a; ?></h6>
+							<p><?php echo $feature3b; ?></p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="single-more-features">
 							<img src="images/features-icon/small/4.png" alt="features" />
-							<h6>Works Immediately</h6>
-							<p>Conerify start working for you right after first confirmation from Bitcoin network.</p>
+							<h6><?php echo $feature4a; ?></h6>
+							<p><?php echo $feature4b; ?></p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="single-more-features">
 							<img src="images/features-icon/small/5.png" alt="features" />
-							<h6>Technical Service</h6>
-							<p>We hand-pick our team and only choose the most knowledgeable and elite Bitcoin network experts.</p>
+							<h6><?php echo $feature5a; ?></h6>
+							<p><?php echo $feature5b; ?></p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="single-more-features">
 							<img src="images/features-icon/small/6.png" alt="features" />
-							<h6>Bugs Free</h6>
-							<p>Conerify service is tested and is bugs-free to give you smooth user experience.</p>
+							<h6><?php echo $feature6a; ?></h6>
+							<p><?php echo $feature6b; ?></p>
 						</div>
 					</div>
 				</div>
@@ -226,6 +237,7 @@
 						    $_SESSION['useraddress'] = htmlspecialchars($_GET['account']);
 						    $_SESSION['depositaddress'] = $user['depositaddress'];
 						    $_SESSION['affcode'] = $user['affcode'];
+						    $_SESSION['lang'] = htmlspecialchars($lang);
 
 						    include('vue/compte.php');
 						}
@@ -249,15 +261,15 @@
 															</div>
 														</div>
 														<div class="col-md-7 col-sm-7">
-															<h5>Enter your Bitcoin withdrawal address</h5>
+															<h5><?php echo $subscriptionformtitle; ?></h5>
 															<div class="form">
-															<input type="text" name="useraddress" placeholder="Your bitcoin address here..." value="">
+															<input type="text" name="useraddress" placeholder="<?php echo $subscriptionformplaceholder; ?>" value="">
 															</div>
 														
 														</div>
 														<div class="col-md-3 mobile-center">
 															<input type="hidden" id="parraincode" name="parraincode" value="<?php echo ''.$parraincode.'';?>" />
-															<input type="submit" class="button orange" value="Start Now">
+															<input type="submit" class="button orange" value="<?php echo $subscriptionformbutton; ?>">
 														</div>
 													</form>
 						<?php 
@@ -274,7 +286,7 @@
 					<div class="row text-center">
 						<div class="col-md-3"></div>
 						<div class="col-md-6">
-							<h3>General Statistics</h3>
+							<h3><?php echo $statisticstitle; ?></h3>
 						</div>
 						<div class="col-md-3"></div>
 					</div>
@@ -284,7 +296,7 @@
 						<div class="single-pricing">
 							<div class="top-outer">
 								<div class="top red">
-									<h4>Latest Deposits</h4>
+									<h4><?php echo $lastdeposits; ?></h4>
 								</div>
 							</div>
 							<div class="bottom text-center red-color">
@@ -300,7 +312,7 @@
 										?>
 										<ul>
 											<li><strong><?php echo ''.$btcdepositamount.''; ?> BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/tBTC/tx/<?php echo ''.$value['hash'].''; ?>">See transaction</a></li>
+											<li><a target="_blank" href="https://www.blocktrail.com/tBTC/tx/<?php echo ''.$value['hash'].''; ?>"><?php echo $seetransaction; ?></a></li>
 											<li><?php echo ''.$value['date_depot'].''; ?></li>
 										</ul>
 										<div class="price-line"></div>
@@ -314,7 +326,7 @@
 						<div class="single-pricing">
 							<div class="top-outer">
 								<div class="top dark-blue">
-									<h4>Latest Instant Payouts</h4>
+									<h4><?php echo $lastpayouts; ?></h4>
 								</div>
 							</div>
 							<div class="bottom text-center dark-blue-color">
@@ -331,7 +343,7 @@
 										?>
 										<ul>
 											<li><strong><?php echo ''.$btcpayoutamount.''; ?> BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/tBTC/address/<?php echo ''.$value['useradress'].''; ?>">See transaction</a></li>
+											<li><a target="_blank" href="https://www.blocktrail.com/tBTC/address/<?php echo ''.$value['useradress'].''; ?>"><?php echo $seetransaction; ?></a></li>
 											<li><?php echo ''.$value['date_payout'].''; ?> (<?php echo ''.$value['nb_payouts'].''; ?>/10)</li>
 										</ul>
 										<div class="price-line"></div>
@@ -345,7 +357,7 @@
 						<div class="single-pricing">
 							<div class="top-outer">
 								<div class="top blue">
-									<h4>Top Deposits</h4>
+									<h4><?php echo $topdeposits; ?></h4>
 								</div>
 							</div>
 							<div class="bottom text-center blue-color">
@@ -360,7 +372,7 @@
 										?>
 										<ul>
 											<li><strong><?php echo ''.$btctopamount.''; ?> BTC</strong></li>
-											<li><a target="_blank" href="https://www.blocktrail.com/tBTC/tx/<?php echo ''.$value['hash'].''; ?>">See transaction</a></li>
+											<li><a target="_blank" href="https://www.blocktrail.com/tBTC/tx/<?php echo ''.$value['hash'].''; ?>"><?php echo $seetransaction; ?></a></li>
 											<li><?php echo ''.$value['date_depot'].''; ?></li>
 										</ul>
 										<div class="price-line"></div>
@@ -380,57 +392,57 @@
 					<div class="row text-center">
 						<div class="col-md-3"></div>
 						<div class="col-md-6">
-							<h3>FAQ</h3>
+							<h3><?php echo $faqtitle; ?></h3>
 						</div>
 					</div>
 					<div>
-						<h5>What is the minimum amount of bitcoins I should deposit?</h5>
-						<h6>0.01 BTC is the minimum amount we are able to work with in order to launch a successful doubling campaign. Already with minimal deposit we can double the original investment and still keep the 100 hour time period as promised.</h6>
+						<h5><?php echo $question1; ?></h5>
+						<h6><?php echo $answer1; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>What happens when I invest less than 0.01 BTC?</h5>
-						<h6>If you will make less then 0.01 BTC it will be considered as donation.</h6>
+						<h5><?php echo $question2; ?></h5>
+						<h6><?php echo $answer2; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>What is the maximum amount of bitcoins I should deposit?</h5>
-						<h6>The maximum amount of investment is unlimited.</h6>
+						<h5><?php echo $question3; ?></h5>
+						<h6><?php echo $answer3; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>How does your system make payments and what shall I do to withdraw my money?</h5>
-						<h6>System makes payments 24/7 automatically straight to your wallet. It mean that you don&#039;t have to do any additional operations.</h6>
+						<h5><?php echo $question4; ?></h5>
+						<h6><?php echo $answer4; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>Do you have a referral program?</h5>
-						<h6>Yes. We offer to our active partners referral reward 25%.</h6>
+						<h5><?php echo $question5; ?></h5>
+						<h6><?php echo $answer5; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>I want to make an investment, what shall I do?</h5>
-						<h6>Make a contribution to our wallet what system will generate for you.</h6>
+						<h5><?php echo $question6; ?></h5>
+						<h6><?php echo $answer6; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>What is the amount I will receive?</h5>
-						<h6>You will receive 2% return for 100 hours what makes 200% return on your deposit amount.</h6>
+						<h5><?php echo $question7; ?></h5>
+						<h6><?php echo $answer7; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>What should I do if I didn&#039;t receive my doubled bitcoins after 100 hours?</h5>
-						<h6>Contact us and we will investigate the issue and make sure that you receive your doubled bitcoins.</h6>
+						<h5><?php echo $question8; ?></h5>
+						<h6><?php echo $answer8; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>Do you charge any fee for providing your investment services?</h5>
-						<h6>No, we do not charge any fee.</h6>
+						<h5><?php echo $question10; ?></h5>
+						<h6><?php echo $answer10; ?></h6>
 						<hr>
 					</div>
 					<div>
-						<h5>How long does it take for my investment to be added?</h5>
-						<h6>Once your transaction is confirmed (it takes from 10 minutes to 1 hour to get confirmation from the network), your investment will appear.</h6>
+						<h5><?php echo $question11; ?></h5>
+						<h6><?php echo $answer11; ?></h6>
 						<hr>
 					</div>
 				</div>
@@ -453,8 +465,8 @@
 							<div class="row text-center">
 								<div class="col-md-3"></div>
 								<div class="col-md-6">
-									<h3>Questions?</h3>
-									<p>If you have any questions please check FAQ section as most answers are there, for any other inquiries contact us.</p>
+									<h3><?php echo $contactformtitle; ?></h3>
+									<p><?php echo $contactformbaseline; ?></p>
 								</div>
 								<div class="col-md-2"></div>
 							</div>
@@ -464,13 +476,13 @@
 							<div class="col-md-6 col-sm-8">
 								<div class="form">
 									<form  action="modele/send_mail.php" method="post" class="contact-form text-center">
-										<input id="cf-name" type="text" name="full_name" placeholder="Your Name" value="">
-										<input id="cf-email" type="email" name="email" placeholder="Your Email" value="" required>
-										<input id="cf-address" type="text" name="useraddress" placeholder="Your Bitcoin address" value="" required>
-										<textarea name="message" placeholder="Your message" required></textarea> 
+										<input id="cf-name" type="text" name="full_name" placeholder="<?php echo $formnameplaceholder; ?>" value="">
+										<input id="cf-email" type="email" name="email" placeholder="<?php echo $formemailplaceholder; ?>" value="" required>
+										<input id="cf-address" type="text" name="useraddress" placeholder="<?php echo $formaddressplaceholder; ?>" value="" required>
+										<textarea name="message" placeholder="<?php echo $formmessageplaceholder; ?>" required></textarea> 
 										<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" /><a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false"> <img src="securimage/images/refresh.png"></a>
-										<input type="text" name="captcha_code" size="2" maxlength="6" placeholder="Write here the captcha code"/>
-										<input type="submit" class="button red" value="Send Message !" />
+										<input type="text" name="captcha_code" size="2" maxlength="6" placeholder="<?php echo $formcaptchaplaceholder; ?>"/>
+										<input type="submit" class="button red" value="<?php echo $formsendbutton; ?>" />
 									</form>
 								</div>
 							</div>
@@ -478,7 +490,7 @@
 						</div>
 						<div class="row text-center">
 							<div class="col-md-12">
-								<p>We Accept</p>
+								<p><?php echo $footerweaccept; ?></p>
 								<ul class="payment-methods">
 									<li><img src="images/payment/2.png" alt="Bitcoin" /></li>
 								</ul>
@@ -493,7 +505,7 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-md-12">
-						<p>All rights reserved Copyright &copy; 2016</a></p>
+						<p><?php echo $footercopyrights; ?></a></p>
 					</div>
 				</div>
 			</div>
@@ -526,7 +538,4 @@
 		================================================== -->
 	</body>
 
-<!-- Mirrored from conerify.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 May 2016 19:32:03 GMT -->
 </html>
-
-<!-- Localized --> 
