@@ -91,6 +91,10 @@
 .features-area-box-outer:after,
 .single-pricing .top-outer:before,
 .single-pricing .top-outer:after,
+.depositlist-box .top-outer:before,
+.depositlist-box .top-outer:after,
+.yourdetails-box .top-outer:before,
+.yourdetails-box .top-outer:after,
 .form-area-box-outer:before,
 .form-area-box-outer:after{
 	background:#dedede;

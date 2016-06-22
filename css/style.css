@@ -411,6 +411,246 @@ img{
 	border: 0;
 }
 
+/*My account area*/
+
+.payoutstitle{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	font-weight: 700;
+}
+
+.accounttitles, accounttitles h1{
+	text-align: center;
+	color: white;
+}
+.payoutslist{
+	padding-left: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.depositlist-box{
+	border-radius:6px;
+	overflow:hidden;
+	margin-bottom:30px;
+	background: white;
+	color: black;
+}
+.depositlist-box .top{
+	padding:18px 35px;
+	position:relative;
+}
+.depositlist-box .top-outer{
+	position:relative;
+}
+.depositlist-box .top:before{
+	position:absolute;
+	right:0;
+	bottom:-7px;
+	width:50.5%;
+	height:20px;
+	content:"";
+	-webkit-transform:rotate(-4deg);
+	-moz-transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-o-transform:rotate(-4deg);
+	transform:rotate(-4deg);
+	z-index:9;
+}
+.depositlist-box .top:after{
+	position:absolute;
+	left:0;
+	bottom:-7px;
+	width:50.5%;
+	height:20px;
+	content:"";
+	-webkit-transform:rotate(4deg);
+	-moz-transform:rotate(4deg);
+	-ms-transform:rotate(4deg);
+	-o-transform:rotate(4deg);
+	transform:rotate(4deg);
+	z-index:9;
+}
+.depositlist-box .top-outer:before{
+	position:absolute;
+	right:0;
+	bottom:-15px;
+	width:50.5%;
+	height:20px;
+	content:"";
+	-webkit-transform:rotate(-4deg);
+	-moz-transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-o-transform:rotate(-4deg);
+	transform:rotate(-4deg);
+	z-index:8;
+}
+.depositlist-box .top-outer:after{
+	position:absolute;
+	left:0;
+	bottom:-15px;
+	width:50.5%;
+	height:20px;
+	content:"";
+	-webkit-transform:rotate(4deg);
+	-moz-transform:rotate(4deg);
+	-ms-transform:rotate(4deg);
+	-o-transform:rotate(4deg);
+	transform:rotate(4deg);
+	z-index:8;
+}
+
+.depositlist-box .top img{
+	display:inline-block;
+	position:relative;
+	top:-3px;
+}
+.depositlist-box .top h4{
+	font-weight: 700;
+	/*line-height: 78px;*/
+	text-align: center;
+}
+
+.depositlist-box .bottom{
+	border:1px solid #dedede;
+	border-top:0;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+	padding-bottom:40px;
+}
+.depositlist-box .bottom h2{
+	font-weight:700;
+	padding-top:50px;
+}
+.depositlist-box .bottom h2 small{
+	font-weight:400;
+	font-size:24px;
+}
+.depositlist-box .bottom h2 span{
+	font-weight:400;
+	font-size:24px;
+}
+.depositlist-box .bottom h2{
+	padding-bottom:16px;
+}
+.depositlist-box .bottom ul{
+	padding:25px 0 30px;
+}
+.depositlist-box .bottom ul li{
+	line-height:22px;
+}
+
+.yourdetails-box{
+	border-radius:6px;
+	overflow:hidden;
+	margin-bottom:30px;
+	background: white;
+	color: black;
+}
+.yourdetails-box .top{
+	padding:18px 35px;
+	position:relative;
+}
+.yourdetails-box .top-outer{
+	position:relative;
+}
+.yourdetails-box .top:before{
+	position:absolute;
+	right:0;
+	bottom:-7px;
+	width:50.5%;
+	height:30px;
+	content:"";
+	-webkit-transform:rotate(-4deg);
+	-moz-transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-o-transform:rotate(-4deg);
+	transform:rotate(-4deg);
+	z-index:9;
+}
+.yourdetails-box .top:after{
+	position:absolute;
+	left:0;
+	bottom:-7px;
+	width:50.5%;
+	height:30px;
+	content:"";
+	-webkit-transform:rotate(4deg);
+	-moz-transform:rotate(4deg);
+	-ms-transform:rotate(4deg);
+	-o-transform:rotate(4deg);
+	transform:rotate(4deg);
+	z-index:9;
+}
+.yourdetails-box .top-outer:before{
+	position:absolute;
+	right:0;
+	bottom:-15px;
+	width:50.5%;
+	height:20px;
+	content:"";
+	-webkit-transform:rotate(-4deg);
+	-moz-transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-o-transform:rotate(-4deg);
+	transform:rotate(-4deg);
+	z-index:8;
+}
+.yourdetails-box .top-outer:after{
+	position:absolute;
+	left:0;
+	bottom:-15px;
+	width:50.5%;
+	height:20px;
+	content:"";
+	-webkit-transform:rotate(4deg);
+	-moz-transform:rotate(4deg);
+	-ms-transform:rotate(4deg);
+	-o-transform:rotate(4deg);
+	transform:rotate(4deg);
+	z-index:8;
+}
+
+.yourdetails-box .top img{
+	display:inline-block;
+	position:relative;
+	top:-3px;
+}
+.yourdetails-box .top h4{
+	font-weight: 700;
+	/*line-height: 78px;*/
+	text-align: center;
+}
+
+.yourdetails-box .bottom{
+	border:1px solid #dedede;
+	border-top:0;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+	padding-bottom:40px;
+}
+.yourdetails-box .bottom h2{
+	font-weight:700;
+	padding-top:50px;
+}
+.yourdetails-box .bottom h2 small{
+	font-weight:400;
+	font-size:24px;
+}
+.yourdetails-box .bottom h2 span{
+	font-weight:400;
+	font-size:24px;
+}
+.yourdetails-box .bottom h2{
+	padding-bottom:16px;
+}
+.yourdetails-box .bottom ul{
+	padding:25px 0 30px;
+}
+.yourdetails-box .bottom ul li{
+	line-height:22px;
+}
 
 /*Pricing Area CSS*/
 
