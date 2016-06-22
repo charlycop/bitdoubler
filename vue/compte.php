@@ -14,13 +14,31 @@
             // On affiche les détails important du compte :
             echo 'User id = '.$_SESSION['user_id'].'';
             echo '<br>User Adress = '.$_SESSION['useraddress'].'';
-            echo '<br>User deposit = '.$_SESSION['depositaddress'].''; 
+            
 
         ?>
 
-        <br>
-        <!--ON AFFICHE LE QRCODE-->
-        <img src="https://chart.googleapis.com/chart?chs=165x165&cht=qr&chl=bitcoin:<?php echo $_SESSION['depositaddress']; ?>" />
+        <br/>
+                            
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-pricing">
+                            <div class="top-outer">
+                                <div class="top blue">
+                                    <h4>To Deposit</h4>
+                                </div>
+                            </div>
+                            <div class="bottom text-center blue-color">
+                                <!--ON AFFICHE LE QRCODE-->
+                               <br/><br/>
+        <img src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=bitcoin:<?php echo $_SESSION['depositaddress']; ?>" />
+                                  <?php echo ''.$_SESSION['depositaddress'].''; ?>
+                                        <!--div class="price-line"></div-->
+                                  
+                            </div>
+                        </div>
+                    </div>
+
+        
         
         <!--Lien d'affiliation-->
         <h2>Affiliate link = <a href="http://<?php echo ''.$_SERVER['HTTP_HOST'];?>/bitdoubler/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?>">http://<?php echo ''.$_SERVER['HTTP_HOST'];?>/bitdoubler/index.php?aff=<?php echo ''.$_SESSION['affcode'].''; ?></a></h2>
