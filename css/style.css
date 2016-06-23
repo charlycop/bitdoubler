@@ -425,9 +425,10 @@ img{
 	color: white;
 }
 .payoutslist{
-	padding-left: 5px;
+	/*padding-left: 5px;*/
 	padding-top: 15px;
 	padding-bottom: 15px;
+	text-align: center;
 }
 
 .depositlist-box{

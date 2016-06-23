@@ -88,3 +88,39 @@ $captchanok = "The Captcha code is incorrect, please try again";
 
 // Error message for subscription
 $btcnok = "The bitcoin address syntax you just entered is invalid, please verify it and try again";
+
+	// My Details
+	$mydetails = "My Details";
+	$yourwallettitle = "Your personnal wallet";
+	$yourwallet = "You subscribed with this address and all the payouts will be send to this address";
+	$yourbalance = "Your current balance";
+
+	$depositaddresstitle = "Your Personnal Deposit Address";
+	$depositaddress1 = "We created a permanent deposit address, only for you!";
+	$depositaddress2 = "Send any amount from 0.01BTC to your personnal deposit bitcoin address below, and start a doubling campaign immediately!";
+	$depositaddress3 = "Use the QrCode above or the text address below";
+
+	$referallinktitle = "Your Refferal Link";
+	$referal = "Share your referal link below, and get an instant and automated payment from all the deposits of the users using your link";
+
+	// Deposit lists
+	$deposittitle = "Deposit";
+	$nodepositbaseline = "Waiting for the first deposit...";
+	$depositdate = "Date";
+	$depositvalue = "Value";
+	$see = "See";
+	$unconfirmed = "unconfirmed yet";
+	$confirmed = "confirmed";
+	$confirmations = "Confirmations";
+	$payouts = "Payouts";
+
+
+	// Payouts list
+	$payoutslisttitle = "Payouts list";
+	$notyetpayout = "Once we receive 6 confirmations from the bitcoin network, the automated hourly instant payouts will begin.";
+
+	// Referal Gains
+	$referalgainstitle = "Your Referrals Gains";
+	$userword = "User";
+	$yourprofit = "Your profit";
+	$norefferalbaseline = "Waiting for the first deposit of your first affiliate...";
