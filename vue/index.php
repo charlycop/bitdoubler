@@ -83,7 +83,7 @@
 				<div class="top-bar">
 					<div class="row">
 						<div class="col-md-6 col-sm-6 mobile-center">
-							<div class="logo"><a href="#"><img src="images/logo.png" alt="logo" /></a></div>
+							<div class="logo"><a href="#"><img src="images/bitcoincloner.png" alt="logo" /></a></div>
 						</div>
 						<div class="col-md-6 col-sm-6 text-right mobile-center">
 							<a href="#form-area" class="button red go-form"><?php echo $support; ?><img src="images/support.png" alt="" /> </a>
