@@ -26,14 +26,33 @@
             <br/><br/><h4><?php echo $yourwallettitle; ?></h4>
             <ul>
                 <li><?php echo $yourwallet; ?><br/><?php echo $_SESSION['useraddress'];?></li>
-                <li><?php echo $yourbalance; ?>Your current balance : <?php echo $amount; ?> BTC</li>
+                <li><?php echo $yourbalance; ?> : <?php echo $amount; ?> BTC</li>
             </ul>
             <div class="price-line"></div>
             <h4><br/><?php echo $depositaddresstitle; ?></h4>
             <ul>
                 <li><?php echo $depositaddress1; ?><br/><?php echo $depositaddress2; ?></li>
-                <li><img src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=bitcoin:<?php echo $_SESSION['depositaddress']; ?>" /></li>
-                <li><?php echo $depositaddress3; ?><br/><strong><php echo $_SESSION['depositaddress']; ?></strong></li>
+                <li><!--img src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=bitcoin:<?php echo $_SESSION['depositaddress']; ?>" /-->
+                    
+                    <?php
+                        
+                        $depositqrcode = 'images/depositqrcodes/'.$_SESSION['depositaddress'].'.png';
+                        
+                        // Si l'image n'existe pas, on la crée
+                        if (!file_exists($depositqrcode))
+                            {
+                               include('phpqrcode/qrlib.php');
+                            
+                               // On créé l'image png et on la stocke
+                               QRcode::png($_SESSION['depositaddress'], $depositqrcode, QR_ECLEVEL_H, 6, 3);
+                            }                                                   
+                    ?>  
+
+                    <!-- On affiche le QRCODE PNG -->                
+                    <img src="<?php echo $depositqrcode; ?>" alt="qrcode"/>
+
+                </li>
+                <li><?php echo $depositaddress3; ?><br/><strong><?php echo $_SESSION['depositaddress']; ?></strong></li>
             </ul>
             <div class="price-line"></div>
             <h4><br/><?php echo $referallinktitle; ?></h4>

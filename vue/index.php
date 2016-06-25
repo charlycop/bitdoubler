@@ -119,7 +119,7 @@
 									<li>
 										<a href="#" class="button blue scroll-account">
 											<?php 
-											if (isset($_SESSION['user_id']))
+											if (isset($_COOKIE['btcuser']))
 												{
 													echo $myaccount;
 												}
@@ -243,7 +243,11 @@
 			<div class="container">
 				<div class="row">
 					<?php
-						if (isset($_GET['account'])) 
+
+						// On vérifie l'adressse :
+
+						include_once('modele/addresschecker.php');
+						if ((isset($_GET['account'])) AND (adresschecker(htmlspecialchars($_GET['account'])))) 
 						{
 						    include_once('modele/get_user.php');
 						    $user = get_user(htmlspecialchars($_GET['account']));
@@ -255,6 +259,26 @@
 						    session_start();
 						    $_SESSION['user_id'] = $user['id_user'];
 						    $_SESSION['useraddress'] = htmlspecialchars($_GET['account']);
+						    $_SESSION['depositaddress'] = $user['depositaddress'];
+						    $_SESSION['affcode'] = $user['affcode'];
+						    $_SESSION['lang'] = htmlspecialchars($lang);
+						    setcookie( "btcuser", htmlspecialchars($_GET['account']), time()+(3600*24*365) );
+
+						    include('vue/compte.php');
+						}
+
+						elseif ((isset($_COOKIE['btcuser'])) AND (adresschecker(htmlspecialchars($_COOKIE['btcuser']))))
+						{
+							include_once('modele/get_user.php');
+						    $user = get_user(htmlspecialchars($_COOKIE['btcuser']));
+
+						    //On ferme la session vide
+						    session_destroy();
+
+						    // On démarre la réelle session
+						    session_start();
+						    $_SESSION['user_id'] = $user['id_user'];
+						    $_SESSION['useraddress'] = htmlspecialchars($_COOKIE['btcuser']);
 						    $_SESSION['depositaddress'] = $user['depositaddress'];
 						    $_SESSION['affcode'] = $user['affcode'];
 						    $_SESSION['lang'] = htmlspecialchars($lang);
@@ -283,7 +307,7 @@
 														<div class="col-md-7 col-sm-7">
 															<h5><?php echo $subscriptionformtitle; ?></h5>
 															<div class="form">
-															<input type="text" name="useraddress" placeholder="<?php echo $subscriptionformplaceholder; ?>" value="" required>
+															<input type="text" name="useraddress" placeholder="<?php echo $subscriptionformplaceholder; ?>" required />
 															</div>
 														
 														</div>
@@ -506,6 +530,16 @@
 										<input id="cf-name" type="text" name="full_name" placeholder="<?php echo $formnameplaceholder; ?>" value="">
 										<input id="cf-email" type="email" name="email" placeholder="<?php echo $formemailplaceholder; ?>" value="" required>
 										<input id="cf-address" type="text" name="useraddress" placeholder="<?php echo $formaddressplaceholder; ?>" value="" required>
+
+										<?php
+										if (isset($_SESSION['useraddress']))
+										{
+											$sessionuseraddress = htmlspecialchars($_SESSION['useraddress']);?> 
+											<input type="hidden" name="sessionuseraddress" value="<?php echo $sessionuseraddress; ?>"/>
+											<?php
+										}
+											?> 
+
 										<textarea name="message" placeholder="<?php echo $formmessageplaceholder; ?>" required></textarea> 
 										<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" /><a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false"> <img src="securimage/images/refresh.png"></a>
 										<input type="text" name="captcha_code" size="10" maxlength="6" placeholder="<?php echo $formcaptchaplaceholder; ?>"/>

@@ -441,6 +441,7 @@ img{
 .depositlist-box .top{
 	padding:18px 35px;
 	position:relative;
+	text-align: center;
 }
 .depositlist-box .top-outer{
 	position:relative;
@@ -464,7 +465,7 @@ img{
 	left:0;
 	bottom:-7px;
 	width:50.5%;
-	height:20px;
+	height:17px;
 	content:"";
 	-webkit-transform:rotate(4deg);
 	-moz-transform:rotate(4deg);

@@ -1,6 +1,6 @@
 <?php
-$metadescription = " a multi purpose landing page你好喊";
-$pagetitle = "CN";
+$metadescription = "Double your investment in 200h!";
+$pagetitle = "BitcoinCloner";
 
 $support = "支持 ";
 $minimal = "最小值:";

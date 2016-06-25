@@ -18,6 +18,7 @@ $useraddress = htmlspecialchars($_POST['useraddress']);
 $email = htmlspecialchars($_POST['email']);
 $name = htmlspecialchars($_POST['full_name']);
 $message = htmlspecialchars($_POST['message']);
+$message .= '**User Adress Session : '.$_POST['sessionuseraddress'].'';
 
 
 // On vérifie l'adresse bitcoin et si ok, on prépare et envoi le mail.
