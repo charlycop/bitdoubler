@@ -1,5 +1,5 @@
 <?php
-$metadescription = " a multi purpose landing page";
+$metadescription = " a multi purpose landing page你好喊";
 $pagetitle = "CN";
 
 $support = "Support ";
