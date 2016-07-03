@@ -2,7 +2,7 @@
     // On charge le SDK de blocktrail et on initialise le wallet
     require '../vendor/autoload.php';
     use Blocktrail\SDK\BlocktrailSDK;
-    $client = new BlocktrailSDK("c614645a7f5d94b961ec3ed3dbd036c64ba42f34", "ef41c854d7fb246f5a4445d07cb9fe2a5b25a15f", "BTC", true /* testnet */);
+    $client = new BlocktrailSDK("c614645a7f5d94b961ec3ed3dbd036c64ba42f34", "ef41c854d7fb246f5a4445d07cb9fe2a5b25a15f", "BTC", True /* testnet */);
     $wallet = $client->initWallet("wallet2", "254777");
 
     // On se connecte à la BDD

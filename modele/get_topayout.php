@@ -13,7 +13,8 @@
                                                     WHERE 
                                                         ((nb_payouts < 10) 
                                                             AND (confirmations=6) 
-                                                            AND (TIMEDIFF(NOW(),last_payout) >= "01:27:00"))');
+                                                            AND (TIMEDIFF(NOW(),last_payout) >= "01:27:00")
+                                                            AND (value >= 1000000))');
         $req->execute();
         $resultat = $req->fetchAll();
 
