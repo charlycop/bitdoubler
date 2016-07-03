@@ -53,41 +53,41 @@ $question3 = "我能存入的比特币最高限额是多少?";
 $answer3 = "没有最高限额，您想投资多少都可以.";
 $question4 = "我可以投资多笔交易吗?";
 $answer4 = "交易数量无限制，您想投几笔就几笔，但是，每笔投入都要大于0.01个比特币.";
-$question5 = "How does your system make payments and what shall I do to withdraw my money?";
-$answer5 = "System makes payments 24/7 automatically and instantly straight to your wallet. It means you don't have to do any additional operations.";
-$question6 = "Do you have a referral program?";
-$answer6 = "Yes. We offer to our active partners referral reward 10% of each deposit made by the customers using your referral link.";
-$question7 = "I want to make an investment, what shall I do?";
-$answer7 = "Just make a btcoin payment to your dedicated bitcoin address that we provided to you in your account section.";
-$question8 = "What is the amount I will receive?";
-$answer8 = "You will receive automatically and instantly 2% of your deposit for the next 100 hours after the confirmations of the network. It makes 200% return on your deposit value. (principal not returned)";
-$question9 = "What should I do if I didn't receive my doubled bitcoins after 100 hours?";
-$answer9 = "Contact us and we will investigate the issue and make sure that you receive your doubled bitcoins.";
-$question10 = "Do you charge any fee for providing your investment services?";
-$answer10 = "No, we do not charge any fee.";
-$question11 = "How long does it take for my investment to be added?";
-$answer11 = "Your investment will appear immediately and once your transaction is confirmed (it takes from 10 minutes to 1 hour on average to get the 6 confirmations from the network), you wll received the first payment.";
+$question5 = "系统怎么支付给我，我怎么能收到比特币，需要自己申请吗?";
+$answer5 = "我们系统24小时自动即时支付到你的钱包. 意思就是你不需要做任何事就能按时收到每一笔支付.";
+$question6 = "我能得到推荐你们网站给其他人的奖励?";
+$answer6 = "有奖励. 我们会给您使用您连接来投资的用户所投金额的10%作为推荐奖励.";
+$question7 = "我想在你们网站上投资，具体要怎样操作?";
+$answer7 = "您注册用户成功后，我们会给您提供一个私人地址，您只需向这个地址转入您想投资的比特币金额.";
+$question8 = "我能收到的比特币总数是多少?";
+$answer8 = "自您投入比特币成功后的100小时内，您将收到的总比特币数会是您所投入的200%（每小时收2%）";
+$question9 = "如果我在100小时后没有收到我所投入的两倍，怎么办?";
+$answer9 = "联系我们，我们将会仔细检查解决问题以确保您收到投入的两倍.";
+$question10 = "我需要支付额外手续费吗?";
+$answer10 = "没有，我们的服务完全免费.";
+$question11 = "我的交易操作需要多久生效，能够在网站总体统计数据查到?";
+$answer11 = "您的交易操作会经过6次比特币官方交易网的6次确认成功后在我们网站生效（通常是10分钟至1小时），然后开始每小时收到2%的回报.";
 
-$contactformtitle = "Questions?";
-$contactformbaseline = "If you have any questions please check FAQ section as most answers are there, for any other inquiries contact us.";
-$formnameplaceholder = "Your Name";
-$formemailplaceholder = "Your Email";
-$formaddressplaceholder = "Your Bitcoin address";
-$formmessageplaceholder = "Your message";
-$formcaptchaplaceholder = "Write here the captcha code";
-$formsendbutton = "Send Message !";
+$contactformtitle = "问题?";
+$contactformbaseline = "如果您有任何疑问请先查看通常问题里面有没有您所遇到的相同问题，若还是解决不了您的疑问请联系我们.";
+$formnameplaceholder = "您的名字";
+$formemailplaceholder = "您的邮箱";
+$formaddressplaceholder = "您的比特币地址";
+$formmessageplaceholder = "您的信息";
+$formcaptchaplaceholder = "输入验证码";
+$formsendbutton = "发送信息 !";
 
-$footerweaccept = "We Accept";
-$footercopyrights = "All rights reserved Copyright &copy; 2016";
+$footerweaccept = "我们接受";
+$footercopyrights = "此网站所有权属于bitcoincloner.com &copy; 2016";
 
 // Error message for email form
-$emailok = "Our customer service got your message, we will answer shortly !";
-$emailnok = "Something went wrong, please try again later";
-$emailnokbtc = "The bitcoin address you entered is invalid, please verify it and try again.";
-$captchanok = "The Captcha code is incorrect, please try again";
+$emailok = "我们客服收到您的信息，我们将会在短时间内回复您 !";
+$emailnok = "有时会出现问题，请稍后再次尝试";
+$emailnokbtc = "您所输入的比特币地址错误，请检查正确重新再试.";
+$captchanok = "验证码错误，请重新再试";
 
 // Error message for subscription
-$btcnok = "The bitcoin address syntax you just entered is invalid, please verify it and try again";
+$btcnok = "您所输入的比特币地址错误，请检查正确重新再试";
 
 	// My Details
 	$mydetails = "My Details";
