@@ -90,37 +90,37 @@ $captchanok = "验证码错误，请重新再试";
 $btcnok = "您所输入的比特币地址错误，请检查正确重新再试";
 
 	// My Details
-	$mydetails = "My Details";
-	$yourwallettitle = "Your personnal wallet";
-	$yourwallet = "You subscribed with this address and all the payouts will be send to this address";
-	$yourbalance = "Your current balance";
+	$mydetails = "我的详细资料";
+	$yourwallettitle = "您的私人钱包";
+	$yourwallet = "您是用这个比特币地址注册的账户，最终账户里所有的盈利都将支付到这个地址";
+	$yourbalance = "您的账户余额";
 
-	$depositaddresstitle = "Your Personnal Deposit Address";
-	$depositaddress1 = "We created a permanent deposit address, only for you!";
-	$depositaddress2 = "Send any amount from 0.01BTC to your personnal deposit bitcoin address below, and start a doubling campaign immediately!";
-	$depositaddress3 = "Use the QrCode above or the text address below";
+	$depositaddresstitle = "您的私人账户地址";
+	$depositaddress1 = "我们为您建立了一个永久的账户地址，只有您可以使用!";
+	$depositaddress2 = "向您的下面这个账户地址输入大于0.01的比特币来开始您的翻倍体验!";
+	$depositaddress3 = "使用上面的二维码或者直接输入下面的句子";
 
-	$referallinktitle = "Your Refferal Link";
-	$referal = "Share your referal link below, and get an instant and automated payment from all the deposits of the users using your link";
+	$referallinktitle = "您的引荐链接";
+	$referal = "分享您的引荐链接，可以即时自动的获得奖励，您可以得到使用您链接来本网站投资的用户所投资总额的10%";
 
 	// Deposit lists
-	$deposittitle = "Deposit";
-	$nodepositbaseline = "Waiting for the first deposit...";
-	$depositdate = "Date";
-	$depositvalue = "Value";
-	$see = "See";
-	$unconfirmed = "unconfirmed yet";
-	$confirmed = "confirmed";
-	$confirmations = "Confirmations";
-	$payouts = "Payouts";
+	$deposittitle = "转账";
+	$nodepositbaseline = "等待第一次转账...";
+	$depositdate = "时间";
+	$depositvalue = "金额";
+	$see = "查看";
+	$unconfirmed = "还没有确认";
+	$confirmed = "确认成功";
+	$confirmations = "确认次数";
+	$payouts = "支付";
 
 
 	// Payouts list
-	$payoutslisttitle = "Payouts list";
-	$notyetpayout = "Once we receive 6 confirmations from the bitcoin network, the automated hourly instant payouts will begin.";
+	$payoutslisttitle = "支付清单";
+	$notyetpayout = "自我们收到比特币英特网的6次确认转账成功, 我们的每小时支付行动就会自动启动.";
 
 	// Referal Gains
-	$referalgainstitle = "Your Referrals Gains";
-	$userword = "User";
-	$yourprofit = "Your profit";
-	$norefferalbaseline = "Waiting for the first deposit of your first affiliate...";
+	$referalgainstitle = "您通过引荐所得到的回报";
+	$userword = "用户";
+	$yourprofit = "您的盈利";
+	$norefferalbaseline = "等待通过您引荐而来的第一笔转账...";
